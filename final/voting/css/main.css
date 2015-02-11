@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html,body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	text-align: center;
+	height: 100%;
+}
+
+iframe {
+  border-width: 0;
+}
+
+#contentWrapper {
+	width: 100%;
+	height: 100%;
+	min-width: 980px;
+	background-color: gray;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+}
+
+#voteArea {
+	width: 100%;
+	height: 60%;
+	background-color: #eee;
+	padding-bottom: 100px;
+}
+
+#token {
+	background-color: #fceabb;
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #ffbb0d;
+	border-radius: 25px;
+	font: 10px Verdana;
+	display: inline-block;
+	cursor: pointer;
+	background: -moz-linear-gradient(-45deg, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+	background: -webkit-linear-gradient(-45deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+	background: -o-linear-gradient(-45deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+	background: -ms-linear-gradient(-45deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+	background: linear-gradient(135deg, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+}
+
+#token p {
+	padding-top: 12px;
+}
+
+#tokenArea {
+	float: left;
+	background-color: #eee;
+	width: 17%;
+	height: 100%;
+}
+
+#graphArea {
+	float: left;
+	width: 65%;
+	height: 100%;
+	background-color: white;
+}
+
+#graphArea img {
+  float: left;
+}
+
+#barGraphWrapper {
+	height: 80%;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+
+#barGraphWrapper table {
+	clear: left;
+	width: 90%;
+	margin-left: auto;
+	border-collapse: collapse;
+}
+
+.graphBar {
+	width: 100%;
+	height: 30px;
+	background-color: #2e6bab;
+	min-width: 35px;
+	max-width: 80px;
+	max-height: 100%;
+	position: absolute;
+	bottom: 0;
+	border-radius: 6px 6px 0 0;
+	padding-top: 5px;
+	background: -moz-linear-gradient(left, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+	background: -webkit-linear-gradient(left, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+	background: -o-linear-gradient(left, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+	background: -ms-linear-gradient(left, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+	background: linear-gradient(to right, #7abcff 0%,#60abf8 44%,#4096ee 100%);
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.graphBar h1 {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.graphBar p { color: white; }
+
+#peopleArea {
+	float: left;
+	width: 18%;
+	height: 100%;
+	background-color: #eee;
+	text-align: center;
+}
+
+.personButton {
+	display: inline-block;
+	background-color: white;
+	clear: both;
+}
+
+#voteButton {
+	background-color: blue;
+	color: white;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px 30px;
+}
+
+#voteButton h2{
+	
+}
+
+#chatArea {
+	background-color: #ddd;
+	height: 100px;
+}
+
+#footer {
+	background-color: #ccc;
+	color: white;
+}

@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+
+* { margin: 0; padding: 0; }
+
+body {
+	background-image: url(../imgs/roughcloth.png);
+	background-repeat: repeat;
+	min-width: 1000px	
+}
+
+h3 { font-family: "Sanchez", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+
+#banner-container {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#headshot-container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	width: 679px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 4px;
+	border: 1px solid white;
+	background-image: url("../imgs/flappers.jpg");
+	background-position: center top -50px;
+}
+
+#headshot-container img {
+	margin-top: -30px;
+}
+
+#login-form {
+	width: 600px;
+	height: 400px;
+	background-color: white;
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: "Sanchez", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 46px;
+	color: white;
+	top: 40px;
+	left: 0px;
+	width: 100%;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding-bottom: 6px;
+}
+
+#nav-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+	height: 26px;
+	background-color: white;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#nav-wrapper ul {
+	float: left;
+	width: 100%;
+	height: 26px;
+	font-family: 'Sanchez', helvetica, arial, sans-serif;
+}
+
+#nav-wrapper ul li {
+	height: 26px;
+	display: inline-block;
+	border-right: 1px solid #ccc;
+	margin-left: -5px;
+}
+
+#nav-wrapper ul li:last-child { background-color: #eee; }
+
+#nav-wrapper ul li a {
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	text-decoration: none;
+	color: #222;
+	padding: 0px 20px 3px 20px;
+}
+
+#nav-wrapper ul li a:hover {
+	background-color: #ccc;
+}
+
+#nav-wrapper ul li a:active {
+	background-color: #eee;
+}
+
+.box-shadow {	box-shadow: 0px 2px 4px #999; }
+
+.sans-serif { font-family: sans-serif; }
+
+#content-wrapper {
+  background-color: white;
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+#content-wrapper h3 {
+  text-align: center;
+}
+
+.galleria {
+  width: 650px;
+  height: 400px;
+  background: white;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
