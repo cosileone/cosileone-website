@@ -759,6 +759,8 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
+    color: #aaa;
+    font-size: .9em;
     text-decoration: none;
 }
 

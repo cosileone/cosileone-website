@@ -11,7 +11,17 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://blog.cosileone.com/',
-        mail: {},
+        mail: {
+	      from: '"Cosi Leone" <blog@cosileone.com',
+              transport: 'SMTP',
+              options: {
+                  service: 'Mailgun',
+                  auth: {
+                      user: 'postmaster@mailgun.cosileone.com', // mailgun username
+                      pass: '3887c5b2badb946d6a225d10c9e4d79f'  // mailgun password
+                  }
+              }
+          },
         database: {
             client: 'sqlite3',
             connection: {
@@ -32,22 +42,20 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blogs published URL.
-        url: 'http://localhost:2368',
+        url: 'http://blog.cosileone.com',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions
-        // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
-        // ```
+        mail: {
+              transport: 'SMTP',
+              options: {
+                  service: 'Mailgun',
+                  auth: {
+                      user: 'postmaster@mailgun.cosileone.com', // mailgun username
+                      pass: '3887c5b2badb946d6a225d10c9e4d79f'  // mailgun password
+                  }
+              }
+          },
 
         database: {
             client: 'sqlite3',
