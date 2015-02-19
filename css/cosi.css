@@ -167,4 +167,5 @@ html, body { background-color: #959fb5; }
 
 #projects-list {
   clear: left;
+  display: none;
 }
