@@ -4,20 +4,42 @@
 	src: url("../fonts/nevis.ttf");
 }
 
-.indent { margin-left: 2em; }
-.backwards { unicode-bidi:bidi-override; direction:rtl; text-align: left; }
 .helv-neue { font-family: "Helvetica Neue"; }
 .lato { font-family: "Lato"; }
 .nevis { font-family: "Nevis"; }
 
+.indent { margin-left: 2em; }
+.backwards { unicode-bidi:bidi-override; direction:rtl; text-align: left; }
 .kern-spacing { letter-spacing: 0.03em; }
-.ultralight { font-weight: 200; }
+.ultralight { font-weight: 100; }
 .bold { font-weight: bold; }
 .bolder { font-weight: 800; }
 
+html, body { background-color: #959fb5; }
+
 #content-wrapper{
   background-color: #536280;
-  padding-top: 1em;
+  padding-top: .5em;
+  position: relative;
+  width: 100%;
+  top: 0px;
+}
+
+#content-wrapper:after {
+  content: " ";
+  display: block;
+  position: relative;
+  top: 2.5em;
+  left: 0px;
+  width: 100%;
+  height: 2.5em;
+  background: linear-gradient(#536280 0%, transparent 0%), linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: -webkit-linear-gradient(#536280 0%, transparent 0%), -webkit-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -webkit-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: -o-linear-gradient(#536280 0%, transparent 0%), -o-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -o-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: -moz-linear-gradient(#536280 0%, transparent 0%), -moz-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -moz-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background-repeat: repeat-x;
+  background-size: 0px 100%, 9px 27px, 9px 27px;
+  margin: .5em 0;
 }
 
 #name-banner {
@@ -31,7 +53,8 @@
   color: white;
   padding-left: .1em;
   padding-right: .1em;
-  font-size: 1.2em;
+  font-size: 1em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
 #name-banner h1 a:hover {
@@ -46,26 +69,24 @@
   width: 128px;
   height: 248px;
   overflow: hidden;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   margin-right: 2em;
-  -webkit-animation: card-shadow-out .5s ease 0s 1;
+  -webkit-animation: card-shadow-out .3s ease 0s 1;
 }
 
 #headshot:hover {
-  -webkit-animation: card-shadow-in .5s ease 0s 1;
+  -webkit-animation: card-shadow-in .3s ease 0s 1;
   -webkit-animation-fill-mode: forwards;
-  animation: card-shadow .5s ease 0s 1;
+  animation: card-shadow .3s ease 0s 1;
 }
 
 @-webkit-keyframes card-shadow-in {
-  from { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
-  to { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); }
+  from { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); }
+  to { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); }
 }
 
 @-webkit-keyframes card-shadow-out {
-  from { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); }
-  to { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+  from { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); }
+  to { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); }
 }
 
 #headshot img {
@@ -80,10 +101,9 @@
 }
 #personal-links p {
   margin: 0;
-  line-height: 1.5;
 }
 #personal-links span {
-  width: 1.7em;
+  width: 1em;
   padding: .35em;
   background-color: #7991c1;
   border-radius: 1em;
@@ -100,6 +120,49 @@
 }
 #personal-links a:hover {
   background-color: #1a2946;
+}
+
+.mui-card-shadow {
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#project-container {
+  padding: 2em 10% 0 10%;
+}
+
+.project-card {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 2em;
+  -webkit-animation: card-shadow-out .3s ease 0s 1;
+  background-position: center;
+}
+
+.project-card:hover {
+  -webkit-animation: card-shadow-in .3s ease 0s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: card-shadow .3s ease 0s 1;
+}
+
+#pokemon {
+  background-image: url(../imgs/poke-sshot.png);
+}
+
+#supersocial {
+  background-image: url(../imgs/ss-sshot.png);
+}
+
+#pointturn {
+  background-image: url(../imgs/pt-sshot.png);
+}
+
+#gabyskok {
+  background-image: url(../imgs/gjs-sshot.png);
+}
+
+#dunce-cap {
+  background-image: url(../imgs/dc-sshot.png);
 }
 
 #projects-list {
