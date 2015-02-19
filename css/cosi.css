@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@font-face {
+	font-family: "Nevis";
+	src: url("../fonts/nevis.ttf");
+}
+
+.indent { margin-left: 2em; }
+.backwards { unicode-bidi:bidi-override; direction:rtl; text-align: left; }
+.helv-neue { font-family: "Helvetica Neue"; }
+.lato { font-family: "Lato"; }
+.nevis { font-family: "Nevis"; }
+
+.kern-spacing { letter-spacing: 0.03em; }
+.ultralight { font-weight: 200; }
+.bold { font-weight: bold; }
+.bolder { font-weight: 800; }
+
+#content-wrapper{
+  background-color: #536280;
+  padding-top: 1em;
+}
+
+#name-banner {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#name-banner h1 a {
+  text-decoration: none;
+  color: white;
+  padding-left: .1em;
+  padding-right: .1em;
+  font-size: 1.2em;
+}
+
+#name-banner h1 a:hover {
+  color: white;
+  background-color: #1a2946;
+  border-radius: 3px;
+}
+
+#headshot {
+  float: left;
+/*  border: 1px solid rgba(255, 255, 255, 0.5);*/
+  width: 128px;
+  height: 248px;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-right: 2em;
+  -webkit-animation: card-shadow-out .5s ease 0s 1;
+}
+
+#headshot:hover {
+  -webkit-animation: card-shadow-in .5s ease 0s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: card-shadow .5s ease 0s 1;
+}
+
+@-webkit-keyframes card-shadow-in {
+  from { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+  to { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); }
+}
+
+@-webkit-keyframes card-shadow-out {
+  from { box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); }
+  to { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+}
+
+#headshot img {
+  position: relative;
+  top: -15%;
+  left: -25%;
+  width: 150%;
+}
+
+#personal-links {
+  margin-top: 1em;
+}
+#personal-links p {
+  margin: 0;
+  line-height: 1.5;
+}
+#personal-links span {
+  width: 1.7em;
+  padding: .35em;
+  background-color: #7991c1;
+  border-radius: 1em;
+  font-size: 1.1em;
+  color: #1a2946;
+}
+#personal-links a {
+  font-size: 1.1em;
+  color: lightblue;
+  text-decoration: none;
+  padding: .1em .5em;
+  margin-left: .2em;
+  border-radius: 2px;
+}
+#personal-links a:hover {
+  background-color: #1a2946;
+}
+
+#projects-list {
+  clear: left;
+}
