@@ -1,5 +1,0 @@
-story.txt						          The Story File
-showfile.htm?filesources/index.php     		
-showfile.htm?filesources/vote.php
-showfile.htm?filesources/register.php
-showfile.htm?filesources/functions.php

@@ -135,12 +135,15 @@ html, body { background-color: #959fb5; }
 }
 
 .project-card {
-  width: 300px;
+  min-width: 300px;
+  width: auto;
   height: 200px;
   margin-bottom: 2em;
   -webkit-animation: card-shadow-out .3s ease 0s 1;
   overflow: hidden;
   text-align: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .project-card:hover {
@@ -156,33 +159,73 @@ html, body { background-color: #959fb5; }
 }
 
 #pokemon {
-  background-image: url(../imgs/poke-sshot.png);
-  background-position: 50% 54%;
+  background-image: url(../imgs/poke-card.png);
+/*  background-position: 50% 54%;*/
 }
 
 #supersocial {
-  background-image: url(../imgs/ss-sshot.png);
-  background-position: 50% -3%;
-  background-repeat: no-repeat;
-  background-color: rgb(82, 150, 204);
+  background-image: url(../imgs/ss-card.png);
+/*  background-position: 50% -3%;*/
 }
 
 #pointturn {
-  background-image: url(../imgs/pt-sshot.png);
-  background-position: 50% 7%;
+  background-image: url(../imgs/pt-card.png);
+/*  background-position: 50% 7%;*/
 }
 
 #gabyskok {
-  background-image: url(../imgs/gjs-sshot.png);
-  background-position: 35% 1%;
+  background-image: url(../imgs/gaby-card.png);
+/*  background-position: 35% 1%;*/
 }
 
 #dunce-cap {
-  background-image: url(../imgs/dc-sshot.png);
-  background-position: 40% 0%;
+  background-image: url(../imgs/dc-card.png);
+/*  background-position: 40% 0%;*/
+}
+
+#lunch-party {
+  background-image: url(../imgs/lp-card.png);
+  background-position: 0% 0%;
 }
 
 #projects-list {
   clear: left;
   display: none;
+}
+
+@media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 480px) {
+    #headshot {
+      margin-right: 1em;
+    }
+    #name-banner {
+      width: 320px;
+    }
+    #name-banner h1 {
+      text-align: center;
+    }
+    #personal-links p {
+      font-size: .8em;
+    } 
+    .project-card {
+      height: 130px;
+    }
+    #project-container {
+      padding: 0 .7em;
+    }
+}
+
+@media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 667px) 
+  and (orientation : portrait) 
+  and (-webkit-min-device-pixel-ratio : 2) {
+    #personal-links p {
+      font-size: .85em;
+    }
+    .project-card {
+      height: 170px;
+      width: 350px;
+    }
 }

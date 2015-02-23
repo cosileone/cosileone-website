@@ -1,1 +1,0 @@
-<p class="text-center">&copy; Lunch Party 2014 - Website by <a href="http://www.dunce-cap.com">Cosimo Leone</a></p>
