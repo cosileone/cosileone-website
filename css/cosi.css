@@ -20,7 +20,7 @@
 
 html, body { background-color: #959fb5; }
 
-#content-wrapper{
+#banner-wrapper{
   background-color: #536280;
   padding-top: .5em;
   position: relative;
@@ -28,14 +28,14 @@ html, body { background-color: #959fb5; }
   top: 0px;
 }
 
-#content-wrapper:after {
+#banner-wrapper:after {
   content: " ";
   display: block;
   position: relative;
-  top: 2.5em;
-  left: 0px;
+  top: 1em;
+/*  left: 0px;*/
   width: 100%;
-  height: 2.5em;
+  height: 2em;
   background: linear-gradient(#536280 0%, transparent 0%), linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
   background: -webkit-linear-gradient(#536280 0%, transparent 0%), -webkit-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -webkit-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
   background: -o-linear-gradient(#536280 0%, transparent 0%), -o-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -o-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
@@ -43,27 +43,6 @@ html, body { background-color: #959fb5; }
   background-repeat: repeat-x;
   background-size: 0px 100%, 9px 27px, 9px 27px;
   margin: .5em 0;
-}
-
-#name-banner {
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#name-banner h1 a {
-  text-decoration: none;
-  color: white;
-  padding-left: .1em;
-  padding-right: .1em;
-  font-size: 1em;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
-}
-
-#name-banner h1 a:hover {
-  color: white;
-  background-color: #1a2946;
-  border-radius: 3px;
 }
 
 #headshot {
@@ -104,6 +83,25 @@ html, body { background-color: #959fb5; }
   display: inline-block;
   vertical-align: top;
 }
+
+#name-banner {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#name-banner h1 a {
+  text-decoration: none;
+  color: white;
+  padding-left: .1em;
+  padding-right: .1em;
+  font-size: 1em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+#name-banner h1 a:hover {
+  color: white;
+  background-color: #1a2946;
+  border-radius: 3px;
+}
 #personal-links p {
   padding-left: .5em;
   margin: 0;
@@ -114,16 +112,24 @@ html, body { background-color: #959fb5; }
   border-radius: 1em;
   font-size: 1em;
   color: #1a2946;
-  padding: .4em .4em .5em .5em;
+  padding: .35em;
 }
-#personal-links a {
+#personal-links :nth-child(2) span { /* resume link */
+  padding-left: .5em;
+  padding-right: .3em;
+}
+#personal-links :last-child span { /* linkedin link */
+  padding-left: .45em;
+  padding-right: .3em;
+}
+#personal-links p a {
   font-size: 1.1em;
   color: lightblue;
   text-decoration: none;
   padding: .1em .5em;
   border-radius: 2px;
 }
-#personal-links a:hover {
+#personal-links p a:hover {
   background-color: #1a2946;
 }
 
@@ -133,7 +139,24 @@ html, body { background-color: #959fb5; }
 }
 
 #project-container {
-  padding: 2em 10% 0 10%;
+  padding: 2em 10%;
+}
+
+#project-container:after {
+  content: " ";
+  display: block;
+  position: relative;
+  top: 1em;
+/*  left: 0px;*/
+  width: 100%;
+  height: 2em;
+  background: linear-gradient(#536280 0%, transparent 0%), linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: -webkit-linear-gradient(#536280 0%, transparent 0%), -webkit-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -webkit-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: -o-linear-gradient(#536280 0%, transparent 0%), -o-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -o-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: -moz-linear-gradient(#536280 0%, transparent 0%), -moz-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -moz-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background-repeat: repeat-x;
+  background-size: 0px 100%, 9px 27px, 9px 27px;
+  margin: .5em 0;
 }
 
 .project-card {
@@ -195,6 +218,11 @@ html, body { background-color: #959fb5; }
   display: none;
 }
 
+#resume-wrapper {
+  height: 500px;
+  background-color: #cfd3dd;
+}
+
 @media only screen 
   and (min-device-width : 320px) 
   and (max-device-width : 480px) {
@@ -215,7 +243,7 @@ html, body { background-color: #959fb5; }
       height: 130px;
     }
     #project-container {
-      padding: 2em .7em;
+      padding: 1em .7em;
     }
 }
 
