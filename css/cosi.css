@@ -142,15 +142,13 @@ html, body { }
   background-color: #959fb5;
   padding-top: 2em;
   width: 100%;
+  text-align: center;
 }
 #project-container .row{
   text-align: center;
-  width: 96%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-#project-container .row :last-child{
-  margin-left: 2em;
 }
 
 #project-container:after {
@@ -176,8 +174,7 @@ html, body { }
   text-align: center;
   background-size: cover;
   background-position: center;
-  float: none;
-  display: inline-flex;
+  float: left;
 }
 
 .project-card:hover {
@@ -251,7 +248,6 @@ html, body { }
     } 
     .project-card {
       height: 130px;
-      float: none;
     }
     #project-container {
       padding-top: 1em;
