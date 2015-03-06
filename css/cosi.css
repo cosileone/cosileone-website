@@ -18,7 +18,7 @@
 .100w { width: 100%; }
 .100h { height: 100%; display: block; }
 
-html, body { background-color: #959fb5; }
+html, body { }
 
 #banner-wrapper{
   background-color: #536280;
@@ -139,29 +139,36 @@ html, body { background-color: #959fb5; }
 }
 
 #project-container {
-  padding: 2em 10%;
+  background-color: #959fb5;
+  padding-top: 2em;
+  width: 100%;
+}
+#project-container .row{
+  text-align: center;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#project-container .row :last-child{
+  margin-left: 2em;
 }
 
 #project-container:after {
   content: " ";
   display: block;
-  position: relative;
-  top: 1em;
-/*  left: 0px;*/
   width: 100%;
   height: 2em;
-  background: linear-gradient(#536280 0%, transparent 0%), linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
-  background: -webkit-linear-gradient(#536280 0%, transparent 0%), -webkit-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -webkit-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
-  background: -o-linear-gradient(#536280 0%, transparent 0%), -o-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -o-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
-  background: -moz-linear-gradient(#536280 0%, transparent 0%), -moz-linear-gradient(135deg, #959fb5 33.33%, transparent 33.33%) 0 0%, #959fb5 -moz-linear-gradient(45deg, #959fb5 33.33%, #536280 33.33%) 0 0%;
+  background: linear-gradient(#536280 0%, transparent 0%), linear-gradient(135deg, #cfd3dd 33.33%, transparent 33.33%) 0 0%, #cfd3dd linear-gradient(45deg, #cfd3dd 33.33%, #959fb5 33.33%) 0 0%;
+  background: -webkit-linear-gradient(#536280 0%, transparent 0%), -webkit-linear-gradient(135deg, #cfd3dd 33.33%, transparent 33.33%) 0 0%, #cfd3dd -webkit-linear-gradient(45deg, #cfd3dd 33.33%, #959fb5 33.33%) 0 0%;
+  background: -o-linear-gradient(#536280 0%, transparent 0%), -o-linear-gradient(135deg, #cfd3dd 33.33%, transparent 33.33%) 0 0%, #cfd3dd -o-linear-gradient(45deg, #cfd3dd 33.33%, #959fb5 33.33%) 0 0%;
+  background: -moz-linear-gradient(#536280 0%, transparent 0%), -moz-linear-gradient(135deg, #cfd3dd 33.33%, transparent 33.33%) 0 0%, #cfd3dd -moz-linear-gradient(45deg, #cfd3dd 33.33%, #959fb5 33.33%) 0 0%;
   background-repeat: repeat-x;
   background-size: 0px 100%, 9px 27px, 9px 27px;
-  margin: .5em 0;
 }
 
 .project-card {
   min-width: 300px;
-  width: auto;
+  max-width: 800px;
   height: 200px;
   margin-bottom: 2em;
   -webkit-animation: card-shadow-out .3s ease 0s 1;
@@ -169,6 +176,8 @@ html, body { background-color: #959fb5; }
   text-align: center;
   background-size: cover;
   background-position: center;
+  float: none;
+  display: inline-flex;
 }
 
 .project-card:hover {
@@ -219,7 +228,7 @@ html, body { background-color: #959fb5; }
 }
 
 #resume-wrapper {
-  height: 500px;
+  height: 100px;
   background-color: #cfd3dd;
 }
 
@@ -233,17 +242,30 @@ html, body { background-color: #959fb5; }
       width: 100%;
     }
     #name-banner h1 {
+      font-size: 3em;
       text-align: center;
-      width: 120px;
+      width: 170px;
     }
     #personal-links p {
       font-size: .8em;
     } 
     .project-card {
       height: 130px;
+      float: none;
     }
     #project-container {
-      padding: 1em .7em;
+      padding-top: 1em;
+    }
+    
+    #project-container .row{
+      text-align: center;
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #project-container .row :last-child{
+      margin-left: 0;
     }
 }
 
