@@ -68,6 +68,7 @@ html, body { background-color: #959fb5; }
 
 #headshot {
   float: left;
+  display: inline-block;
 /*  border: 1px solid rgba(255, 255, 255, 0.5);*/
   width: 128px;
   height: 248px;
@@ -100,25 +101,26 @@ html, body { background-color: #959fb5; }
 }
 
 #personal-links {
-  margin-top: 1em;
+  display: inline-block;
+  vertical-align: top;
 }
 #personal-links p {
+  padding-left: .5em;
   margin: 0;
 }
 #personal-links span {
   width: 1em;
-  padding: .35em;
   background-color: #7991c1;
   border-radius: 1em;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #1a2946;
+  padding: .4em .4em .5em .5em;
 }
 #personal-links a {
   font-size: 1.1em;
   color: lightblue;
   text-decoration: none;
   padding: .1em .5em;
-  margin-left: .2em;
   border-radius: 2px;
 }
 #personal-links a:hover {
@@ -197,13 +199,14 @@ html, body { background-color: #959fb5; }
   and (min-device-width : 320px) 
   and (max-device-width : 480px) {
     #headshot {
-      margin-right: 1em;
+      margin-right: .5em;
     }
     #name-banner {
-      width: 320px;
+      width: 100%;
     }
     #name-banner h1 {
       text-align: center;
+      width: 120px;
     }
     #personal-links p {
       font-size: .8em;
@@ -212,10 +215,11 @@ html, body { background-color: #959fb5; }
       height: 130px;
     }
     #project-container {
-      padding: 0 .7em;
+      padding: 2em .7em;
     }
 }
 
+/*
 @media only screen 
   and (min-device-width : 375px) 
   and (max-device-width : 667px) 
@@ -228,4 +232,4 @@ html, body { background-color: #959fb5; }
       height: 170px;
       width: 350px;
     }
-}
+}*/
