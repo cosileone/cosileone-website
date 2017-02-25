@@ -5,6 +5,7 @@ html {
     color: #fff;
     font-size: 1em;
     line-height: 1.4;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 ::-moz-selection {
@@ -63,7 +64,9 @@ textarea {
 .blue { color: #bae1ff; }
 .purple { color: #d2baff; }
 
-.of-hidden { overflow: hidden; }
+.of-hidden {
+  overflow: hidden;
+}
 
 /*.gradient {
   background-image:
@@ -162,12 +165,10 @@ h1, h2, h3 {
 }
 
 #content-wrapper {
-  position: relative;
-  height: 100%;
+  height: 200vh;
 }
 
 .bg-gradient1 {
-  height: 300vh;
   width: 100%;
   /*background-color: #86add5;*/
   background-color: #749bc4;
@@ -324,30 +325,31 @@ h1, h2, h3 {
   padding-left: 40px;
 }
 
-#contact-area {
+#contact {
   color: white;
+  margin-bottom: 200px;
   position: relative;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
   top: 250px;
 }
 
-#contact-area h2 {
+#contact h2 {
   font-size: 3em;
 }
 
-#contact-area i.fa {
+#contact i.fa {
   color: white;
   font-size: 5em;
   padding-top: 10px;
   transition: 0.3s ease all;
 }
 
-#contact-area i.fa:hover {
+#contact i.fa:hover {
   padding-top: 0;
 }
 
-#contact-area i.fa-linkedin:hover {
+#contact i.fa-linkedin:hover {
   /*color: #0077b5;*/
   /*text-shadow: 0px 0px 0px white;*/
 }
@@ -360,7 +362,7 @@ h1, h2, h3 {
 footer {
   color: white;
   font-family: Verdana;
-  font-size: .75em;
+  font-size: 10pt;
   font-weight: 100;
   bottom: 0;
   left: 0;
