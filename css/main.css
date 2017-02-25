@@ -166,6 +166,8 @@ h1, h2, h3 {
 
 #content-wrapper {
   height: 200vh;
+  width: 100%;
+  position: relative;
 }
 
 .bg-gradient1 {
