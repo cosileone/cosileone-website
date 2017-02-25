@@ -59,7 +59,7 @@
         <div id="card-section" class="">
 <!-- Start Carousel -->
           <div id="left-arrow" class="arrow hidden-xs hidden-sm"><a href="#card-carousel" role="button" data-slide="prev"><img src="imgs/left-arrow.png" alt="Previous Project"></a></div>
-          <div id="card-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+          <div id="card-carousel" class="carousel slide hidden-xs hidden-sm" data-ride="carousel" data-interval="false">
             <!-- Indicators -->
             <ol class="carousel-indicators hidden-xs hidden-sm">
               <li data-target="#card-carousel" data-slide-to="0"></li>
@@ -70,14 +70,25 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item">
-                <a href="https://www.twitch.tv/cosileone"><div id="twitch-card" class="card level-2"></div></a>
+                <a href="https://www.twitch.tv/cosileone"><div id="twitch-card" class="card level-2 col-md-11"></div></a>
               </div>
               <div class="item active">
-                <a href="http://www.getjex.com"><div id="jex-card" class="card level-2"></div></a>
+                <a href="http://www.getjex.com"><div id="jex-card" class="card level-2 col-md-11"></div></a>
               </div>
               <div class="item">
-                <a href="http://pokemon.cosileone.com"><div id="poke-card" class="card level-2"></div></a>
+                <a href="http://pokemon.cosileone.com"><div id="poke-card" class="card level-2 col-md-11"></div></a>
               </div>
+            </div>
+          </div>
+          <div id="static-cards" class="container-fluid visible-xs visible-sm">
+            <div class="row">
+              <a href="https://www.twitch.tv/cosileone"><div id="twitch-card" class="card level-2 col-xs-11 col-sm-11"></div></a>
+            </div>
+            <div class="row">
+              <a href="http://www.getjex.com"><div id="jex-card" class="card level-2 col-xs-11 col-sm-11"></div></a>
+            </div>
+            <div class="row">
+              <a href="http://pokemon.cosileone.com"><div id="poke-card" class="card level-2 col-xs-11 col-sm-11"></div></a>
             </div>
           </div>
           <div id="right-arrow" class="arrow hidden-xs hidden-sm"><a href="#card-carousel" role="button" data-slide="next"><img src="imgs/right-arrow.png" alt="Next Project"></a></div>
@@ -87,7 +98,7 @@
         <div id="contact" class="container-fluid">
           <h2>Get in touch</h2>
           <div class="row">
-            <div class="col-xs-4 col-sm-2 col-sm-offset-3 social-icon"><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></div>
+            <div class="col-xs-4 col-sm-2 col-sm-offset-3 social-icon"><a href="mailto:&#099;&#111;&#115;&#105;&#046;&#108;&#101;&#111;&#110;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=Email%20Intro"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></div>
             <div class="col-xs-4 col-sm-2 social-icon"><a href="https://www.linkedin.com/in/cosimoleone"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
             <div class="col-xs-4 col-sm-2 social-icon"><a href="https://twitter.com/cosileone"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
           </div>
@@ -101,7 +112,7 @@
         </div>
       </div>
       <footer>
-        Design by Cosi <i class="fa fa-rocket" aria-hidden="true"></i>
+        <span id="credit"><i class="fa fa-rocket" aria-hidden="true"></i> Design by Cosi</span><i class="fa fa-caret-up" aria-hidden="true"></i> <a id="btt" href="#top-bar">Back to top? <i class="fa fa-caret-up" aria-hidden="true"></i></a>
       </footer>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

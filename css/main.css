@@ -65,7 +65,7 @@ textarea {
 .purple { color: #d2baff; }
 
 .of-hidden {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /*.gradient {
@@ -221,6 +221,11 @@ h1, h2, h3 {
   z-index: 20;
 }
 
+#static-cards {
+  padding-top: 100px;
+  text-align: center;
+}
+
 #white-box {
   -webkit-box-shadow: 0px 1px 14px -1px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 1px 14px -1px rgba(0,0,0,0.2);
@@ -258,6 +263,10 @@ h1, h2, h3 {
   border: 1px solid #666;
 }
 
+#card-carousel {
+  width: 600px;
+}
+
 .carousel {
   display: inline-block;
 }
@@ -278,7 +287,6 @@ h1, h2, h3 {
   margin: 1rem;
   position: relative;
   transition: all 0.3s ease;
-  width: 600px;
 }
 
 .card:hover {
@@ -362,6 +370,7 @@ h1, h2, h3 {
 }
 
 footer {
+  background-color: rgba(1, 1, 1, 0.2);
   color: white;
   font-family: Verdana;
   font-size: 10pt;
@@ -371,6 +380,15 @@ footer {
   right: 0;
   position: absolute;
   text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+#credit {
+  float: left;
+  padding-left: 10px;
 }
 
 /* ==========================================================================
@@ -405,12 +423,20 @@ footer {
 and (min-device-width : 320px)
 and (max-device-width : 568px)
 and (orientation : portrait) {
+  #content-wrapper{
+    height: 300vh;
+  }
+
   #intro-text {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 
   #header-text {
     text-align: center;
+  }
+
+  #intro-text-wrapper {
+    margin-top: 20px;
   }
 
   #white-box {
@@ -429,7 +455,6 @@ and (orientation : portrait) {
   }
 
   .card {
-    width: 290px;
     height: 150px;
   }
 

@@ -1,6 +1,12 @@
 $("#contact-button").click(function() {
     $('html, body').animate({
-        scrollTop: $("#contact-area").offset().top
+        scrollTop: $("#contact").offset().top
+    }, 800);
+});
+
+$("#btt").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#top-bar").offset().top
     }, 800);
 });
 
