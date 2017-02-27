@@ -85,46 +85,7 @@ textarea {
   outline: 0;
 }
 
-.dropdown {
-  display: inline-block;
-  left: 1em;
-  margin-top: 1em;
-}
-
-#resume-dropdown {
-  border: 1px solid transparent;
-  border-radius: 3px;
-  float: left;
-  color: white;
-  text-decoration: none;
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
-}
-
-#resume-dropdown:hover {
-  border: 1px solid white;
-}
-
-#contact-button {
-  background-color: white;
-  border: 0;
-  border-radius: 3px;
-  box-shadow: 0 -3px 0 rgba(0,0,0,0.2) inset;
-  float: right;
-  margin-right: 1em;
-  margin-top: 1em;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-#contact-button:hover {
-  background-color: #eee;
-  box-shadow: 0 0 0 rgba(0,0,0,0.2) inset;
-}
-
-#contact-button:active {
-  transform: translateY(2px);
-}
-
-nav {
+/*nav {
   font-family: "Roboto";
   font-size: 1.3em;
   text-align: center;
@@ -148,7 +109,7 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-}
+}*/
 
 h1 {
   font-size: 1.0rem;
@@ -177,7 +138,6 @@ h1, h2, h3 {
 #intro-text {
   margin-top: 50px;
   color: white;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 #intro-text, #header-text {
@@ -186,7 +146,8 @@ h1, h2, h3 {
 }
 
 #header-text {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  text-shadow: 1px 2px 1px rgba(0,0,0,0.2);
 }
 
 #intro-text a {
@@ -207,6 +168,49 @@ h1, h2, h3 {
   border-bottom: 1px dashed transparent;
 }
 
+#ctas {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+#contact-dropdown {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+#contact-dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-menu span {
+  padding-left: 8px;
+}
+
+#hire-button {
+  background-color: white;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 -3px 0 rgba(0,0,0,0.2) inset;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#hire-button:hover {
+  background-color: #eee;
+  box-shadow: 0 0 0 rgba(0,0,0,0.2) inset;
+}
+
+#hire-button:active {
+  transform: translateY(2px);
+}
+
 #card-section {
   padding-top: 100px;
   text-align: center;
@@ -225,8 +229,9 @@ h1, h2, h3 {
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
   display: block;
-  padding-bottom: 100px;
+  padding: 80px 0 100px 0;
   position: relative;
+  text-align: center;
   width: 100%;
 }
 
@@ -326,7 +331,7 @@ h1, h2, h3 {
 #contact {
   color: white;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
   margin-bottom: 200px;
 }
 
