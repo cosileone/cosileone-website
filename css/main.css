@@ -355,8 +355,21 @@ h1, h2, h3 {
   margin-top: 30px;
 }
 
+#btt-arrow {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+  padding-left: 10px;
+  padding-top: 5px;
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+}
+
 footer {
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   clear: both;
   color: white;
   font-family: Verdana;
@@ -375,7 +388,6 @@ footer a {
 }
 
 #credit {
-  float: left;
   padding-left: 10px;
 }
 

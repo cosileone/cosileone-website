@@ -4,10 +4,10 @@ $("#contact-button").click(function() {
     }, 800);
 });
 
-$("#btt").click(function() {
+$("#btt-arrow").click(function() {
     $('html, body').animate({
         scrollTop: $("#top-bar").offset().top
-    }, 800);
+    }, 400);
 });
 
 // $(function () {
