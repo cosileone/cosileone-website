@@ -211,16 +211,6 @@ h1, h2, h3 {
   transform: translateY(2px);
 }
 
-#card-section {
-  padding-top: 100px;
-  text-align: center;
-}
-
-#static-cards {
-  padding-top: 100px;
-  text-align: center;
-}
-
 #white-box {
   -webkit-box-shadow: 0px 1px 14px -1px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 1px 14px -1px rgba(0,0,0,0.3);
@@ -232,7 +222,16 @@ h1, h2, h3 {
   padding: 80px 0 100px 0;
   position: relative;
   text-align: center;
-  width: 100%;
+  width: 100%; !important
+}
+
+#card-section {
+  margin: 0;
+  text-align: center;
+}
+
+#card-section h2 {
+  color: #666;
 }
 
 .carousel-indicators {
@@ -265,16 +264,36 @@ h1, h2, h3 {
 
 .card {
   background: #fff;
+  background-position: center;
   border-radius: 2px;
   display: inline-block;
   height: 300px;
-  margin-left: 28px;
-  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
   transition: all 0.3s ease;
 }
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#poke-card {
+  background-image: url(../imgs/poke-card2.png);
+}
+
+#timf-card {
+  background-image: url(../imgs/timf-sshot.png);
+  background-position: 85% 14%;
+}
+
+#gaby-card {
+  background-image: url(../imgs/gjs-sshot.png);
+  background-position: top;
+}
+
+#pt-card {
+  background-image: url(../imgs/pt-sshot.png);
+  background-position: 50% 5%;
 }
 
 #twitch-card {
@@ -289,10 +308,6 @@ h1, h2, h3 {
 #jex-card {
   background-image: url(../imgs/jex-screen.png);
   background-position: 42% 40%;
-}
-
-#poke-card {
-  background-image: url(../imgs/poke-card2.png);
 }
 
 #code-card {
@@ -332,7 +347,7 @@ h1, h2, h3 {
   color: white;
   text-align: center;
   text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 #contact h2 {
@@ -452,8 +467,6 @@ and (max-device-width : 568px) {
 
   .card {
     height: 150px;
-    margin-left: 15px;
-    margin-top: 15px;
   }
 
   #jex-card {
@@ -462,6 +475,11 @@ and (max-device-width : 568px) {
 
   #poke-card {
     background-position: 50% 20%;
+  }
+
+  #gaby-card {
+    background-image: url(../imgs/gaby-card.png);
+    background-size: cover;
   }
 }
 
