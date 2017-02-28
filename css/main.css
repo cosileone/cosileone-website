@@ -191,7 +191,7 @@ h1, h2, h3 {
 }
 
 .dropdown-menu span {
-  padding-left: 8px;
+  padding-left: 18px;
 }
 
 #hire-button {
@@ -289,7 +289,7 @@ h1, h2, h3 {
 
 #pt-card {
   background-image: url(../imgs/pt-sshot.png);
-  background-position: 50% 5%;
+  background-position: 50% 0%;
 }
 
 #ss-card {
@@ -458,6 +458,7 @@ and (max-device-width : 568px) {
   #white-box {
     -webkit-clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
     clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    padding: 50px 0;
   }
 
   #card-section {
@@ -481,6 +482,10 @@ and (max-device-width : 568px) {
 
   #poke-card {
     background-position: 50% 20%;
+  }
+
+  #pt-card {
+    background-position: 50% 5%;
   }
 
   #ss-card {

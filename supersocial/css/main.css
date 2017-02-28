@@ -1,0 +1,257 @@
+* {	margin: 0; padding: 0; }
+
+@font-face {
+	font-family: "Avenida";
+	src: url("../assets/Avenida.eot?#iefix");
+	src: url("../assets/Avenida.eot?#iefix") format("eot"), 
+		 url("../assets/Avenida.woff") format("woff"),
+		 url("../assets/Avenida.ttf") format("truetype"),
+		 url("../assets/Avenida.svg#Avenida") format("svg");
+}
+
+body { font-size: 100%; text-align: center; background-color: #eee}
+
+#banner-wrapper {
+	background: rgb(84, 151, 203); /* Old browsers */
+	background: linear-gradient(to bottom, rgb(84, 151, 203) 0%, rgb(27, 117, 186) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b0e0', endColorstr='#4681c4',GradientType=0 ); /* IE6-9 */
+	text-align: center;
+}
+
+#title {
+	margin-top: -1em;
+	vertical-align: top;
+	padding-left: 4em;
+	font-family: "Avenida", Futura, sans-serif;
+	margin-bottom: -4em;
+	text-align: center;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 11em;
+}
+
+#title-word1 {
+}
+
+.ss-red { color: rgb(221, 42, 42); }
+.ss-dropshadow { text-shadow: 0 5px 0 rgba(0, 0, 0, 0.3); }
+
+#title-word2 {
+	color: white;
+}
+
+#title sup {
+	font-family: "Avenida", Futura, sans-serif;
+	text-shadow: none;
+	font-size: 11em;
+	color: rgba(255, 255, 255, 0.2);
+	vertical-align: text-top;
+	line-height: 50%;
+}
+
+#subtitle {
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 1.8em;
+	color: rgb(189, 219, 240);
+	text-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+#slogan {
+	margin-top: .8em;
+	font-family: "Avenida", Futura, sans-serif;
+	color: rgb(255, 203, 5);
+	text-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+	font-size: 6em;
+}
+
+#nav-bar {
+	margin-top: 3em;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+	font-weight: 200;
+}
+
+nav-bar ul {
+}
+
+#nav-bar ul li {
+	display: inline-block;
+	text-align: center;
+	font-size: 1.5em;
+	width: 19%;
+}
+
+#nav-bar ul li:last-child {
+}
+
+#nav-bar ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav-bar ul li a:hover {
+	color: rgb(78, 192, 224);
+}
+
+#nav-bar ul li a:active {
+	color: rgb(78, 192, 224);
+
+}
+
+.separator {
+	height: 1em;
+	width: 100%;
+	background-color: white;
+}
+
+#big-social {
+}
+
+#big-social div {
+	float: left;
+	width: 33.333%;
+	margin-bottom: -10%;
+}
+
+#big-social div img {
+	max-width: 100%;
+}
+
+#content-wrapper {
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	width: 70%;
+	z-index: 10;
+	margin-bottom: 2em;
+}
+
+#content {
+	font-size: 1.6em;
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+	display: inline-block;
+	padding: 1.5em;
+	margin-right: 1em;
+	background-color: white;
+	width: 65%;
+	min-width: 300px;
+	max-width: 65%;
+}
+
+#content h4 {
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+#content p {
+}
+
+#content ul {
+	padding-left: 2em;
+}
+
+#sidebar {
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	background-color: white;
+	width: 30%;
+	padding: 1.5em;
+}
+
+#hello-aside {
+	padding-top: 1em;
+	font-size: 3em;
+	font-weight: 300;
+	background-color: rgb(27,117,186);
+	color: white;
+}
+
+#hello-aside h4 {
+	font-family: "Avenida", Futura, sans-serif;
+	font-size: 2em;
+}
+
+.divider {
+	display: inline-block;
+	background-color: rgb(78, 192, 224);
+	height: .5em;
+	width: 1.5em;
+}
+.divider-v {
+	display: inline-block;
+	background-color: rgb(78, 192, 224);
+	height: 4em;
+	width: 1em;
+	vertical-align: middle;
+	margin-top: -1em;
+}
+
+#social-aside {
+	background-color: #ddd;
+	margin-top: .5em;
+	padding-top: .5em;
+	color: rgb(27,117,186);
+	font-size: 3em;
+	font-weight: 300;
+}
+
+#social-aside img {
+	margin-top: -0.5em;
+	width: 1.5em;
+	margin-bottom: 1em;
+}
+
+#footer-wrapper {
+	width: 100%;
+}
+
+#social-banner {
+	height: 4.5em;
+	background-image: url("../imgs/social-banner.png");
+	background-repeat: repeat-x;
+}
+
+#final-branding-area {
+	height: 20em;
+	background: rgb(84, 151, 203); /* Old browsers */
+	background: linear-gradient(to bottom, rgb(84, 151, 203) 0%, rgb(27, 117, 186) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70b0e0', endColorstr='#4681c4',GradientType=0 ); /* IE6-9 */
+}
+
+#SS {
+	display: inline-block;
+	color: white;
+	font-family: "Avenida", Futura, sans-serif;
+}
+
+#SS h4 {
+	display: inline-block;
+	font-size: 11em;
+	vertical-align: middle;
+}
+
+#the-ss {
+	display: inline-block;
+	margin-left: 1.5em;
+	font-family: "Avenida", Futura, sans-serif;
+	font-size: 3.5em;
+	margin-right: 1em;
+}
+
+.footer-div {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: 200;
+}
