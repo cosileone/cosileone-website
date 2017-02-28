@@ -286,14 +286,20 @@ h1, h2, h3 {
   background-position: 85% 14%;
 }
 
-#gaby-card {
-  background-image: url(../imgs/gjs-sshot.png);
-  background-position: top;
-}
 
 #pt-card {
   background-image: url(../imgs/pt-sshot.png);
   background-position: 50% 5%;
+}
+
+#ss-card {
+  background-image: url(../imgs/ss-sshot.png);
+  background-position: 50% 2%;
+}
+
+#gaby-card {
+  background-image: url(../imgs/gjs-sshot.png);
+  background-position: top;
 }
 
 #twitch-card {
@@ -307,7 +313,7 @@ h1, h2, h3 {
 
 #jex-card {
   background-image: url(../imgs/jex-screen.png);
-  background-position: 42% 40%;
+  background-position: 44% 40%;
 }
 
 #code-card {
@@ -376,7 +382,7 @@ h1, h2, h3 {
 }
 
 #btt-arrow {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.8);
   border-radius: 3px;
   height: 30px;
@@ -389,7 +395,7 @@ h1, h2, h3 {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   clear: both;
   color: white;
   font-family: Verdana;
@@ -450,8 +456,8 @@ and (max-device-width : 568px) {
   }
 
   #white-box {
-    padding-bottom: 100px;
-    width: 100%;
+    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
   }
 
   #card-section {
@@ -475,6 +481,11 @@ and (max-device-width : 568px) {
 
   #poke-card {
     background-position: 50% 20%;
+  }
+
+  #ss-card {
+    background-image: url(../imgs/ss-card.png);
+    background-size: cover;
   }
 
   #gaby-card {
