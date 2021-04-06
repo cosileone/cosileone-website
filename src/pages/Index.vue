@@ -60,7 +60,7 @@
             >
               <template #image>
                 <g-image
-                  class="flex-shrink-0 w-16 p-2"
+                  class="flex-shrink-0 w-16 h-16 p-2"
                   src="~/assets/svg/vuejs-logo.svg"
                 ></g-image>
               </template>
@@ -72,7 +72,7 @@
             >
               <template #image>
                 <g-image
-                  class="flex-shrink-0 w-16"
+                  class="flex-shrink-0 w-16 h-16"
                   src="~/assets/svg/react-logo.svg"
                 ></g-image>
               </template>
@@ -106,7 +106,7 @@
             <GridListTile
               title="Django"
               description="v2+"
-              href="https://djangoproject.org"
+              href="https://djangoproject.com"
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center">
@@ -152,7 +152,7 @@
             >
               <template #image>
                 <g-image
-                  class="flex-shrink-0 w-16 p-2"
+                  class="flex-shrink-0 w-16 h-16 p-2"
                   src="~/assets/svg/python-logo.svg"
                 ></g-image>
               </template>
@@ -194,8 +194,20 @@
             href="https://getbootstrap.com"
           >
             <template #image>
+<!--              <g-image-->
+<!--                class="flex-shrink-0 w-16 h-16 p-2"-->
+<!--                src="~/assets/svg/bootstrap-logo.svg"-->
+<!--              ></g-image>-->
+            </template>
+          </GridListTile>
+          <GridListTile
+            title="Vue"
+            description="Preferred Frontend"
+            href="https://vuejs.org"
+          >
+            <template #image>
               <g-image
-                class="flex-shrink-0 w-16 p-2"
+                class="flex-shrink-0 w-16 h-16 p-2"
                 src="~/assets/svg/vuejs-logo.svg"
               ></g-image>
             </template>
@@ -207,7 +219,7 @@
           >
             <template #image>
               <g-image
-                class="flex-shrink-0 w-16 p-2"
+                class="flex-shrink-0 w-16 h-16 p-2"
                 src="~/assets/svg/vuejs-logo.svg"
               ></g-image>
             </template>
@@ -219,7 +231,7 @@
           >
             <template #image>
               <g-image
-                class="flex-shrink-0 w-16 p-2"
+                class="flex-shrink-0 w-16 h-16 p-2"
                 src="~/assets/svg/vuejs-logo.svg"
               ></g-image>
             </template>
@@ -231,7 +243,7 @@
           >
             <template #image>
               <g-image
-                class="flex-shrink-0 w-16 p-2"
+                class="flex-shrink-0 w-16 h-16 p-2"
                 src="~/assets/svg/vuejs-logo.svg"
               ></g-image>
             </template>
@@ -243,19 +255,7 @@
           >
             <template #image>
               <g-image
-                class="flex-shrink-0 w-16 p-2"
-                src="~/assets/svg/vuejs-logo.svg"
-              ></g-image>
-            </template>
-          </GridListTile>
-          <GridListTile
-            title="Vue"
-            description="Preferred Frontend"
-            href="https://vuejs.org"
-          >
-            <template #image>
-              <g-image
-                class="flex-shrink-0 w-16 p-2"
+                class="flex-shrink-0 w-16 h-16 p-2"
                 src="~/assets/svg/vuejs-logo.svg"
               ></g-image>
             </template>
@@ -315,6 +315,7 @@ export default {
   },
   methods: {
     toggleShowMoreTech() {
+      console.log(this.showingMoreTech);
       this.showingMoreTech = !this.showingMoreTech;
     },
   },
@@ -322,10 +323,6 @@ export default {
 </script>
 
 <style>
-.avoid-wrap {
-  display: inline-block;
-}
-
 .learn-more-button {
   @apply inline-flex items-center px-4 py-2 border border-indigo-200 shadow-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
 }
