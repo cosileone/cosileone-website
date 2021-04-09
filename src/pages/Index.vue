@@ -40,8 +40,8 @@
             Despite working with many web technologies, these remain my favourites.
           </p>
           <p class="hidden md:block font-body text-gray-700 mt-4">
-            For a full list of technologies I am familiar with that didn't make the cut,
-            go ahead and click the button below to view more.
+            For a full list of technologies I am familiar with and have used throughout my career,
+            go ahead and click the button below.
           </p>
           <button
             type="button"
@@ -83,10 +83,12 @@
               href="https://tailwindcss.com"
             >
               <template #image>
-                <g-image
-                  class="flex-shrink-0 w-16 pl-2"
-                  src="~/assets/svg/tailwindcss-logo.svg"
-                ></g-image>
+                <div class="flex w-16 items-center">
+                  <g-image
+                    class="w-full pl-3 pt-1"
+                    src="~/assets/svg/tailwindcss-logo.svg"
+                  ></g-image>
+                </div>
               </template>
             </GridListTile>
             <GridListTile
@@ -109,7 +111,7 @@
               href="https://djangoproject.com"
             >
               <template #image>
-                <div class="flex flex-shrink-0 w-16 items-center">
+                <div class="flex w-16 items-center">
                   <g-image
                     class="w-full pl-3 pt-1"
                     src="~/assets/svg/django-logo.svg"
@@ -189,74 +191,64 @@
       >
         <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-4 xl:grid-cols-6">
           <GridListTile
+            title="Webpack"
+            description="JavaScript bundler"
+            href="https://webpack.js.org/"
+          >
+            <template #image>
+              <g-image
+                class="flex-shrink-0 w-16 h-16 p-2"
+                src="~/assets/svg/webpack.svg"
+              ></g-image>
+            </template>
+          </GridListTile>
+          <GridListTile
+            title="Flask"
+            description="Python Microframework"
+            href="https://flask.palletsprojects.com/en/1.1.x/"
+          >
+            <template #image>
+              <g-image
+                class="flex-shrink-0 w-16 h-16 p-2"
+                src="~/assets/svg/flask-logo.svg"
+              ></g-image>
+            </template>
+          </GridListTile>
+          <GridListTile
             title="Bootstrap"
             description="v3+"
             href="https://getbootstrap.com"
           >
             <template #image>
-<!--              <g-image-->
-<!--                class="flex-shrink-0 w-16 h-16 p-2"-->
-<!--                src="~/assets/svg/bootstrap-logo.svg"-->
-<!--              ></g-image>-->
-            </template>
-          </GridListTile>
-          <GridListTile
-            title="Vue"
-            description="Preferred Frontend"
-            href="https://vuejs.org"
-          >
-            <template #image>
               <g-image
                 class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/vuejs-logo.svg"
+                src="~/assets/svg/bootstrap-logo.svg"
               ></g-image>
             </template>
           </GridListTile>
           <GridListTile
-            title="Vue"
-            description="Preferred Frontend"
-            href="https://vuejs.org"
+            title="JQuery"
+            description="Needs no introduction"
+            href="https://jquery.com/"
           >
             <template #image>
-              <g-image
-                class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/vuejs-logo.svg"
-              ></g-image>
+              <div class="flex w-16 items-center">
+                <g-image
+                  class="w-full pl-3 pt-1"
+                  src="~/assets/svg/jquery-logo.svg"
+                ></g-image>
+              </div>
             </template>
           </GridListTile>
           <GridListTile
-            title="Vue"
-            description="Preferred Frontend"
-            href="https://vuejs.org"
+            title="TypeScript"
+            description="Typed JavaScript"
+            href="https://www.typescriptlang.org/"
           >
             <template #image>
               <g-image
                 class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/vuejs-logo.svg"
-              ></g-image>
-            </template>
-          </GridListTile>
-          <GridListTile
-            title="Vue"
-            description="Preferred Frontend"
-            href="https://vuejs.org"
-          >
-            <template #image>
-              <g-image
-                class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/vuejs-logo.svg"
-              ></g-image>
-            </template>
-          </GridListTile>
-          <GridListTile
-            title="Vue"
-            description="Preferred Frontend"
-            href="https://vuejs.org"
-          >
-            <template #image>
-              <g-image
-                class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/vuejs-logo.svg"
+                src="~/assets/svg/typescript-logo.svg"
               ></g-image>
             </template>
           </GridListTile>
@@ -264,7 +256,11 @@
       </div>
     </ContentTile>
     <ContentTile class="bg-gradient-to-br from-indigo-100 to-yellow-100 shadow-sm">
-      <div class="h-10"></div>
+      <div class="p-6">
+        <h4 class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
+          Hobby Projects
+        </h4>
+      </div>
     </ContentTile>
     <ContentTile class="bg-gradient-to-bl from-purple-50 to-blue-50 flex justify-between items-center">
       <div class="justify-self-end inline-flex items-center text-gray-500">
@@ -315,7 +311,6 @@ export default {
   },
   methods: {
     toggleShowMoreTech() {
-      console.log(this.showingMoreTech);
       this.showingMoreTech = !this.showingMoreTech;
     },
   },
