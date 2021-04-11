@@ -32,8 +32,6 @@ html {
 }
 
 body {
-  @apply font-sans;
-  margin: 0;
-  padding: 1.25rem;
+  @apply font-sans p-3 md:p-5 m-0;
 }
 </style>

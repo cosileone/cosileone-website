@@ -2,10 +2,11 @@
   <Layout>
     <ContentTile id="top" class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm">
       <div class="mt-32 md:mt-48 md:pb-48 text-center">
-        <p class="mb-7 text-lg text-gray-600">Hi, my name is</p>
+        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>
         <h1 class="mb-8 text-6xl text-gray-700 font-display font-extrabold tracking-tighter">Cosimo Leone</h1>
         <p class="text-lg text-gray-500">I'm a senior software engineer with an eye&nbsp;for&nbsp;design.</p>
-        <p class="text-lg text-gray-500 mb-16">I build websites, Rest APIs, component libraries and I can bring your company's web platform&nbsp;to&nbsp;life.</p>
+        <p class="text-lg text-gray-500 mb-16">I build websites, Rest APIs, component libraries and I can bring your
+          company's web platform&nbsp;to&nbsp;life.</p>
         <div class="">
           <button
             type="button"
@@ -21,13 +22,13 @@
           </button>
         </div>
       </div>
-<!--      <div class="relative flex justify-center">-->
-<!--        <div class="h-64 w-5/6 p-4 bg-white bg-opacity-80 shadow rounded-xl absolute text-center">-->
-<!--          <h2 class="text-4xl">-->
-<!--            Here are some technologies I am familiar with-->
-<!--          </h2>-->
-<!--        </div>-->
-<!--      </div>-->
+      <!--      <div class="relative flex justify-center">-->
+      <!--        <div class="h-64 w-5/6 p-4 bg-white bg-opacity-80 shadow rounded-xl absolute text-center">-->
+      <!--          <h2 class="text-4xl">-->
+      <!--            Here are some technologies I am familiar with-->
+      <!--          </h2>-->
+      <!--        </div>-->
+      <!--      </div>-->
     </ContentTile>
     <ContentTile class="bg-gray-50 shadow">
       <div class="grid grid-cols-1 md:grid-cols-2">
@@ -36,7 +37,8 @@
             The tools I use
           </h4>
           <p class="font-body text-gray-700 mt-4">
-            These are the languages and frameworks I prefer to work with and the ones I reach for when building new projects.
+            These are the languages and frameworks I prefer to work with and the ones I reach for when building new
+            projects.
             Despite working with many web technologies, these remain my favourites.
           </p>
           <p class="hidden md:block font-body text-gray-700 mt-4">
@@ -92,20 +94,6 @@
               </template>
             </GridListTile>
             <GridListTile
-              title="Storybook"
-              description="Component Libraries"
-              href="https://storybook.js.org/"
-            >
-              <template #image>
-                <div class="flex items-center flex-shrink-0 w-16">
-                  <g-image
-                    class="pl-3 w-12"
-                    src="~/assets/svg/storybook.svg"
-                  ></g-image>
-                </div>
-              </template>
-            </GridListTile>
-            <GridListTile
               title="Django"
               description="v2+"
               href="https://djangoproject.com"
@@ -120,20 +108,6 @@
               </template>
             </GridListTile>
             <GridListTile
-              title="ExpressJS"
-              description="RESTful APIs"
-              href="https://expressjs.com"
-            >
-              <template #image>
-                <div class="flex flex-shrink-0 w-16 items-center">
-                  <g-image
-                    class="flex-shrink-0 pl-2"
-                    src="~/assets/expressjs.png"
-                  ></g-image>
-                </div>
-              </template>
-            </GridListTile>
-            <GridListTile
               title="Node"
               description="JavaScript Runtime"
               href="https://nodejs.org"
@@ -143,6 +117,20 @@
                   <g-image
                     class="w-full pl-3 pt-2"
                     src="~/assets/svg/nodejs-logo.svg"
+                  ></g-image>
+                </div>
+              </template>
+            </GridListTile>
+            <GridListTile
+              title="Express"
+              description="RESTful APIs"
+              href="https://expressjs.com"
+            >
+              <template #image>
+                <div class="flex flex-shrink-0 w-16 items-center">
+                  <g-image
+                    class="flex-shrink-0 pl-2"
+                    src="~/assets/expressjs.png"
                   ></g-image>
                 </div>
               </template>
@@ -173,6 +161,20 @@
                 </div>
               </template>
             </GridListTile>
+            <GridListTile
+              title="Storybook"
+              description="Component Libraries"
+              href="https://storybook.js.org/"
+            >
+              <template #image>
+                <div class="flex items-center flex-shrink-0 w-16">
+                  <g-image
+                    class="pl-3 w-12"
+                    src="~/assets/svg/storybook.svg"
+                  ></g-image>
+                </div>
+              </template>
+            </GridListTile>
           </ul>
           <div class="flex justify-center">
             <button
@@ -189,7 +191,7 @@
         v-show="showingMoreTech"
         class="mt-6 xl:mt-0"
       >
-        <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-4 xl:grid-cols-6">
+        <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
           <GridListTile
             title="Webpack"
             description="JavaScript bundler"
@@ -255,11 +257,101 @@
         </ul>
       </div>
     </ContentTile>
-    <ContentTile class="bg-gradient-to-br from-indigo-100 to-yellow-100 shadow-sm">
+    <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
       <div class="p-6">
         <h4 class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
           Hobby Projects
         </h4>
+        <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <g-image class="h-48 w-full object-cover md:object-top"
+                       src="~/assets/img/poke-card2.png"
+                       alt="Preview picture of the Pokemon randomizer project"/>
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="mb-2">
+                <span class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Bootstrap
+                </span>
+                <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Flask
+                </span>
+                <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Python
+                </span>
+                <span class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  NLP
+                </span>
+              </div>
+              <div class="flex-1">
+                <a href="#" class="block">
+                  <p class="text-xl font-semibold text-gray-900">
+                    Pokemon Randomizer
+                  </p>
+                  <p class="mt-3 text-base text-gray-500">
+                    Remix your favourite Pokemon from the original 151!
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <a
+                  href="http://pokemon.cosileone.com"
+                  class="flex items-center px-4 py-1 text-sm rounded border shadow-sm hover:bg-gray-50"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-shrink-0">
+              <g-image class="h-48 object-none object-right md:w-full md:object-cover"
+                       src="~/assets/img/timf2.png"
+                       alt="Preview picture of the WoW auction house project named 'Time is Money Friend'"/>
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="mb-2">
+                <span class="mr-2 bg-green-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Vue
+                </span>
+                <span class="mr-2 bg-gray-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Django
+                </span>
+                <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Blizzard API
+                </span>
+                <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                  Semantic UI
+                </span>
+              </div>
+              <div class="flex-1">
+                <a href="http://timf.cosileone.com" class="block">
+                  <p class="text-xl font-semibold text-gray-900">
+                    'Time is Money, Friend'
+                  </p>
+                  <p class="mt-3 text-base text-gray-500">
+                    Open source search engine and profit calculator based on live, in-game prices of player items in World of Warcraft.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <a
+                  href="http://timf.cosileone.com"
+                  class="flex items-center px-4 py-1 text-sm rounded border shadow-sm hover:bg-gray-50"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </ContentTile>
     <ContentTile class="bg-gradient-to-bl from-purple-50 to-blue-50 flex justify-between items-center">
