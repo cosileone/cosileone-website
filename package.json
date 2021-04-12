@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "gridsome-plugin-gtag": "^0.1.10"
+    "gridsome-plugin-gtag": "^0.1.10",
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^4.1.1",
