@@ -15,6 +15,14 @@ module.exports = {
         shouldImport: false,
         shouldTimeTravel: false
       }
-    }
+    },
+    {
+      use: 'gridsome-plugin-gtag',
+      options: {
+        config: {
+          id: 'UA-59507110-2',
+        },
+      },
+    },
   ]
 }
