@@ -4,7 +4,7 @@
       <slot name="preview-image">Image</slot>
     </div>
     <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-      <div class="mb-2">
+      <div class="mb-3">
         <slot name="badges">
           <span
             class="mr-2 bg-green-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
