@@ -8,4 +8,18 @@ const scroll = {
   }
 }
 
-export { scroll };
+const clickOutside = {
+  inserted(el, binding) {
+    el.clickOutsideEvent = function(event) {
+      if (!(el === event.target || el.contains(event.target))) {
+        binding.value();
+      }
+    };
+    document.body.addEventListener('click', el.clickOutsideEvent);
+  },
+  unbind(el) {
+    document.body.removeEventListener('click', el.clickOutsideEvent);
+  }
+};
+
+export { scroll, clickOutside };

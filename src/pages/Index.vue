@@ -8,12 +8,12 @@
         <p class="text-lg text-gray-500 mb-16">I build websites, Rest APIs, component libraries and I can bring your
           company's web platform&nbsp;to&nbsp;life.</p>
         <div class="">
-          <button
-            type="button"
+          <a
+            href="#tools"
             class="learn-more-button"
           >
             Learn more
-          </button>
+          </a>
           <button
             type="button"
             class="contact-button ml-6"
@@ -33,7 +33,7 @@
     <ContentTile class="bg-gray-50 shadow">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
-          <h4 class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
+          <h4 id="tools" class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
             The tools I use
           </h4>
           <p class="font-body text-gray-700 mt-4">
@@ -123,14 +123,14 @@
             </GridListTile>
             <GridListTile
               title="Express"
-              description="RESTful APIs"
+              description="Javascript RESTful APIs"
               href="https://expressjs.com"
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center">
                   <g-image
                     class="flex-shrink-0 pl-2"
-                    src="~/assets/expressjs.png"
+                    src="~/assets/img/logos/expressjs.png"
                   ></g-image>
                 </div>
               </template>
@@ -193,15 +193,17 @@
       >
         <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
           <GridListTile
-            title="Webpack"
-            description="JavaScript bundler"
-            href="https://webpack.js.org/"
+            title="Django Rest Framework"
+            description="Django RESTful APIs"
+            href="https://www.django-rest-framework.org/"
           >
             <template #image>
-              <g-image
-                class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/webpack.svg"
-              ></g-image>
+              <div class="flex flex-shrink-0 w-16 items-center">
+                <g-image
+                  class="pl-2"
+                  src="~/assets/img/logos/drf-logo.png"
+                ></g-image>
+              </div>
             </template>
           </GridListTile>
           <GridListTile
@@ -213,6 +215,18 @@
               <g-image
                 class="flex-shrink-0 w-16 h-16 p-2"
                 src="~/assets/svg/flask-logo.svg"
+              ></g-image>
+            </template>
+          </GridListTile>
+          <GridListTile
+            title="Webpack"
+            description="JavaScript bundler"
+            href="https://webpack.js.org/"
+          >
+            <template #image>
+              <g-image
+                class="flex-shrink-0 w-16 h-16 p-2"
+                src="~/assets/svg/webpack.svg"
               ></g-image>
             </template>
           </GridListTile>
@@ -260,97 +274,59 @@
     <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
       <div class="p-6">
         <h4 class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
-          Hobby Projects
+          Projects I've tinkered on
         </h4>
         <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
+          <ProjectTile
+            title="Pokemon Randomizer"
+            description="Remix your favourite Pokemon from the original 151!"
+            url="http://pokemon.cosileone.com"
+          >
+            <template #preview-image>
               <g-image class="h-48 w-full object-cover md:object-top"
                        src="~/assets/img/poke-card2.png"
                        alt="Preview picture of the Pokemon randomizer project"/>
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="mb-2">
-                <span class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Bootstrap
-                </span>
-                <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Flask
-                </span>
-                <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Python
-                </span>
-                <span class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  NLP
-                </span>
-              </div>
-              <div class="flex-1">
-                <a href="#" class="block">
-                  <p class="text-xl font-semibold text-gray-900">
-                    Pokemon Randomizer
-                  </p>
-                  <p class="mt-3 text-base text-gray-500">
-                    Remix your favourite Pokemon from the original 151!
-                  </p>
-                </a>
-              </div>
-              <div class="mt-6 flex items-center">
-                <a
-                  href="http://pokemon.cosileone.com"
-                  class="flex items-center px-4 py-1 text-sm rounded border shadow-sm hover:bg-gray-50"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
+            </template>
+            <template #badges>
+              <span class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Bootstrap
+              </span>
+              <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Flask
+              </span>
+              <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Python
+              </span>
+              <span class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                NLP
+              </span>
+            </template>
+          </ProjectTile>
+          <ProjectTile
+            title="'Time is Money, Friend'"
+            description="Open source search engine and profit calculator based on live, in-game prices of player items in World of Warcraft."
+            url="http://timf.cosileone.com"
+          >
+            <template #preview-image>
               <g-image class="h-48 object-none object-right md:w-full md:object-cover"
                        src="~/assets/img/timf2.png"
                        alt="Preview picture of the WoW auction house project named 'Time is Money Friend'"/>
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="mb-2">
-                <span class="mr-2 bg-green-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Vue
-                </span>
-                <span class="mr-2 bg-gray-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Django
-                </span>
-                <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Blizzard API
-                </span>
-                <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                  Semantic UI
-                </span>
-              </div>
-              <div class="flex-1">
-                <a href="http://timf.cosileone.com" class="block">
-                  <p class="text-xl font-semibold text-gray-900">
-                    'Time is Money, Friend'
-                  </p>
-                  <p class="mt-3 text-base text-gray-500">
-                    Open source search engine and profit calculator based on live, in-game prices of player items in World of Warcraft.
-                  </p>
-                </a>
-              </div>
-              <div class="mt-6 flex items-center">
-                <a
-                  href="http://timf.cosileone.com"
-                  class="flex items-center px-4 py-1 text-sm rounded border shadow-sm hover:bg-gray-50"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  View Project
-                </a>
-              </div>
-            </div>
-          </div>
+            </template>
+            <template #badges>
+              <span class="mr-2 bg-green-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Vue
+              </span>
+              <span class="mr-2 bg-gray-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Django
+              </span>
+              <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Blizzard API
+              </span>
+              <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Semantic UI
+              </span>
+            </template>
+          </ProjectTile>
         </div>
       </div>
     </ContentTile>
@@ -390,9 +366,10 @@
 import ContentTile from '~/components/ContentTile';
 import Icon from '~/components/Icon';
 import GridListTile from '~/components/GridListTile';
+import ProjectTile from '~/components/ProjectTile';
 
 export default {
-  components: { ContentTile, Icon, GridListTile },
+  components: { ContentTile, Icon, GridListTile, ProjectTile },
   metaInfo: {
     title: 'Portfolio',
   },
