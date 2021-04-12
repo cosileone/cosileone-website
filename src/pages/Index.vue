@@ -281,6 +281,7 @@
             title="Pokemon Randomizer"
             description="Remix your favourite Pokemon from the original 151!"
             url="http://pokemon.cosileone.com"
+            github-url="https://github.com/ohnorobo/pokemon"
           >
             <template #preview-image>
               <g-image class="h-48 w-full object-cover md:object-top"
@@ -306,9 +307,10 @@
             title="'Time is Money, Friend'"
             description="Open source search engine and profit calculator based on live, in-game prices of player items in World of Warcraft."
             url="http://timf.cosileone.com"
+            github-url="https://github.com/cosileone/TimeIsMoneyFriend-API"
           >
             <template #preview-image>
-              <g-image class="h-48 object-none object-right md:w-full md:object-cover"
+              <g-image class="h-48 object-cover object-right md:w-full"
                        src="~/assets/img/timf2.png"
                        alt="Preview picture of the WoW auction house project named 'Time is Money Friend'"/>
             </template>

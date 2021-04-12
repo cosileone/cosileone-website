@@ -23,17 +23,26 @@
           </p>
         </a>
       </div>
-      <div class="mt-6 flex items-center">
+      <div class="mt-6 flex items-center justify-end flex-wrap">
         <a
+          v-if="url"
           :href="url"
-          class="flex items-center px-4 py-1 text-sm rounded border shadow-sm hover:bg-gray-50"
+          class="flex-grow md:flex-grow-0 mb-2 md:mb-0 flex items-center justify-center px-4 py-1 text-sm rounded border shadow-sm hover:bg-gray-50"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
                stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
-          View Project
+          Visit Website
+        </a>
+        <a
+          v-if="githubUrl"
+          :href="githubUrl"
+          class="flex-grow md:flex-grow-0 justify-center md:ml-2 text-white bg-gray-800 flex items-center px-4 py-1 text-sm rounded shadow-sm hover:bg-gray-700"
+        >
+          <Icon icon="github" class="w-4 mr-2"></Icon>
+          View on Github
         </a>
       </div>
     </div>
@@ -41,8 +50,11 @@
 </template>
 
 <script>
+import Icon from '~/components/Icon';
+
 export default {
   name: "ProjectTile",
+  components: {Icon},
   props: {
     title: {
       type: String,
@@ -54,7 +66,11 @@ export default {
     },
     url: {
       type: String,
-      required: true,
+      default: null,
+    },
+    githubUrl: {
+      type: String,
+      default: null,
     },
   },
 }
