@@ -6,7 +6,7 @@
         <h1 class="mb-8 text-6xl text-gray-700 font-display font-extrabold tracking-tighter">Cosimo Leone</h1>
         <p class="text-lg text-gray-500">I'm a senior software engineer with an eye&nbsp;for&nbsp;design.</p>
         <p class="text-lg text-gray-500 mb-16">I build websites, Rest APIs, component libraries and I can bring your
-          company's web platform&nbsp;to&nbsp;life.</p>
+          company's web platform&nbsp;to&nbsp;life!</p>
         <div class="">
           <a
             href="#tools"
