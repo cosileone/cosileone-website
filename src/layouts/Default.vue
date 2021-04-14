@@ -25,8 +25,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Overpass:wght@800&display=swap');
-
 html {
   scroll-behavior: smooth;
 }

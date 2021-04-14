@@ -16,4 +16,9 @@ export default function (Vue, { router, head, isClient }) {
     name: 'description',
     content: 'Cosimo Leone\'s online portfolio and digital curriculum vitae.'
   })
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Overpass:wght@800&display=swap',
+  })
 }
