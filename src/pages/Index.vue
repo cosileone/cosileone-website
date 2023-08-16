@@ -94,15 +94,15 @@
               </template>
             </GridListTile>
             <GridListTile
-              title="Django"
-              description="v2+"
-              href="https://djangoproject.com"
+              title="Next.js"
+              description="v13+"
+              href="https://nextjs.org/"
             >
               <template #image>
                 <div class="flex w-16 items-center">
                   <g-image
                     class="w-full pl-3 pt-1"
-                    src="~/assets/svg/django-logo.svg"
+                    src="~/assets/svg/nextjs-logo.svg"
                   ></g-image>
                 </div>
               </template>
@@ -135,18 +135,18 @@
                 </div>
               </template>
             </GridListTile>
-            <GridListTile
-              title="Python"
-              description="v2.7 & v3+"
-              href="https://python.org"
-            >
-              <template #image>
-                <g-image
-                  class="flex-shrink-0 w-16 h-16 p-2"
-                  src="~/assets/svg/python-logo.svg"
-                ></g-image>
-              </template>
-            </GridListTile>
+              <GridListTile
+                      title="TypeScript"
+                      description="Typed JavaScript"
+                      href="https://www.typescriptlang.org/"
+              >
+                  <template #image>
+                      <g-image
+                              class="flex-shrink-0 w-16 h-16 p-2"
+                              src="~/assets/svg/typescript-logo.svg"
+                      ></g-image>
+                  </template>
+              </GridListTile>
             <GridListTile
               title="JavaScript"
               description="ES6+"
@@ -162,17 +162,15 @@
               </template>
             </GridListTile>
             <GridListTile
-              title="Storybook"
-              description="Component Libraries"
-              href="https://storybook.js.org/"
+              title="Python"
+              description="v2.7 & v3+"
+              href="https://python.org"
             >
               <template #image>
-                <div class="flex items-center flex-shrink-0 w-16">
-                  <g-image
-                    class="pl-3 w-12"
-                    src="~/assets/svg/storybook.svg"
-                  ></g-image>
-                </div>
+                <g-image
+                  class="flex-shrink-0 w-16 h-16 p-2"
+                  src="~/assets/svg/python-logo.svg"
+                ></g-image>
               </template>
             </GridListTile>
           </ul>
@@ -189,9 +187,23 @@
       </div>
       <div
         v-show="showingMoreTech"
-        class="mt-6 xl:mt-0"
+        class="mt-6 xl:mt-4"
       >
         <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
+            <GridListTile
+                    title="Django"
+                    description="v2+"
+                    href="https://djangoproject.com"
+            >
+                <template #image>
+                    <div class="flex w-16 items-center">
+                        <g-image
+                                class="w-full pl-3 pt-1"
+                                src="~/assets/svg/django-logo.svg"
+                        ></g-image>
+                    </div>
+                </template>
+            </GridListTile>
           <GridListTile
             title="Django Rest Framework"
             description="Django RESTful APIs"
@@ -256,79 +268,80 @@
               </div>
             </template>
           </GridListTile>
-          <GridListTile
-            title="TypeScript"
-            description="Typed JavaScript"
-            href="https://www.typescriptlang.org/"
-          >
-            <template #image>
-              <g-image
-                class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/typescript-logo.svg"
-              ></g-image>
-            </template>
-          </GridListTile>
+            <GridListTile
+                    title="Storybook"
+                    description="Component Libraries"
+                    href="https://storybook.js.org/"
+            >
+                <template #image>
+                    <div class="flex items-center flex-shrink-0 w-16">
+                        <g-image
+                                class="pl-3 w-12"
+                                src="~/assets/svg/storybook.svg"
+                        ></g-image>
+                    </div>
+                </template>
+            </GridListTile>
         </ul>
       </div>
     </ContentTile>
     <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
       <div class="p-6">
         <h4 class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
-          Projects I've tinkered on
+          Fun projects I've worked on
         </h4>
         <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
           <ProjectTile
-            title="Pokemon Randomizer"
-            description="Remix your favourite Pokemon from the original 151!"
-            url="http://pokemon.cosileone.com"
-            github-url="https://github.com/ohnorobo/pokemon"
+            title="Auction Goblin"
+            description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack."
+            url="https://www.auctiongoblin.com"
           >
             <template #preview-image>
-              <g-image class="h-48 w-full object-cover md:object-top"
-                       src="~/assets/img/poke-card2.png"
-                       alt="Preview picture of the Pokemon randomizer project"/>
+              <g-image class="h-48 object-cover object-top md:w-full"
+                       src="~/assets/img/auction-goblin.webp"
+                       alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"/>
             </template>
             <template #badges>
-              <span class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                Bootstrap
-              </span>
-              <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                Flask
-              </span>
-              <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                Python
-              </span>
-              <span class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                NLP
-              </span>
-            </template>
-          </ProjectTile>
-          <ProjectTile
-            title="'Time is Money, Friend'"
-            description="Open source search engine and profit calculator based on live, in-game prices of player items in World of Warcraft."
-            url="http://timf.cosileone.com"
-            github-url="https://github.com/cosileone/TimeIsMoneyFriend-API"
-          >
-            <template #preview-image>
-              <g-image class="h-48 object-cover object-right md:w-full"
-                       src="~/assets/img/timf2.png"
-                       alt="Preview picture of the WoW auction house project named 'Time is Money Friend'"/>
-            </template>
-            <template #badges>
-              <span class="mr-2 bg-green-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                Vue
-              </span>
-              <span class="mr-2 bg-gray-100 text-green-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                Django
+              <span class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Next.js
               </span>
               <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
                 Blizzard API
               </span>
-              <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
-                Semantic UI
+              <span class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                AWS
+              </span>
+              <span class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                TypeScript (full stack)
               </span>
             </template>
           </ProjectTile>
+            <ProjectTile
+                    title="Pokemon Randomizer"
+                    description="Remix your favourite Pokemon from the original 151!"
+                    url="http://pokemon.cosileone.com"
+                    github-url="https://github.com/ohnorobo/pokemon"
+            >
+                <template #preview-image>
+                    <g-image class="h-48 w-full object-cover md:object-top"
+                             src="~/assets/img/poke-card2.png"
+                             alt="Preview picture of the Pokemon randomizer project"/>
+                </template>
+                <template #badges>
+              <span class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Bootstrap
+              </span>
+                    <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Flask
+              </span>
+                    <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                Python
+              </span>
+                    <span class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+                NLP
+              </span>
+                </template>
+            </ProjectTile>
         </div>
       </div>
     </ContentTile>
