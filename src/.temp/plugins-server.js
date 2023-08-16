@@ -1,5 +1,5 @@
-import plugin_gridsome_plugin_tailwindcss_5 from "/Users/cosi/Dev/cosileone/cosileone-website/node_modules/gridsome-plugin-tailwindcss/gridsome.client.js"
-import plugin_gridsome_plugin_gtag_6 from "/Users/cosi/Dev/cosileone/cosileone-website/node_modules/gridsome-plugin-gtag/gridsome.client.js"
+import plugin_gridsome_plugin_tailwindcss_5 from "/Users/cosi/dev/personal_projects/cosileone-website/node_modules/gridsome-plugin-tailwindcss/gridsome.client.js"
+import plugin_gridsome_plugin_gtag_6 from "/Users/cosi/dev/personal_projects/cosileone-website/node_modules/gridsome-plugin-gtag/gridsome.client.js"
 
 export default [
   {
