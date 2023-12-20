@@ -2,23 +2,19 @@
   <Layout>
     <ContentTile
       id="top"
-      class="bg-gradient-to-tr from-black to-gray-800 pb-64 shadow-sm"
+      class="bg-gradient-to-tr from-black to-slate-800 pb-64 shadow-sm"
     >
       <div class="mt-32 md:mt-48 md:pb-48 text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h1
-          class="md:mb-40 mb-8 md:mt-80 text-8xl md:text-9xl text-gray-100 font-display font-bold tracking-tighter"
+          class="md:mb-40 mb-52 mt-[200px] md:mt-80 text-8xl md:text-9xl text-slate-50 font-display font-bold tracking-tighter"
         >
           Cosi Leone
         </h1>
-        <p class="text-lg text-gray-300">
-          I'm a senior software engineer with an eye&nbsp;for&nbsp;design.
+        <p class="text-lg text-slate-300 tracking-tight">
+          Best-in-class web development for your business.
         </p>
-        <p class="text-lg text-gray-300 mb-16">
-          I build websites, Rest APIs, component libraries and I can bring your
-          company's web platform&nbsp;to&nbsp;life!
-        </p>
-        <div class="">
+        <div class="mt-20 md:mt-28 mb-4">
           <a href="#tools" class="learn-more-button">
             Learn more
           </a>
@@ -422,7 +418,9 @@
       class="bg-gradient-to-bl from-purple-50 to-blue-50 flex justify-between items-center"
     >
       <div class="justify-self-end inline-flex items-center text-gray-500">
-        <span class="text-sm inline-flex">Handmade by&nbsp;Cosi.</span>
+        <span class="text-sm inline-flex">
+          Handmade by&nbsp;Cosi Leone, LLC. 🍿
+        </span>
         <!--        <span class="text-lg hidden md:inline-flex">&nbsp;🚀</span>-->
       </div>
       <div class="social-icons inline-flex text-gray-700">
@@ -477,7 +475,7 @@ export default {
 
 <style>
 .learn-more-button {
-  @apply inline-flex items-center px-4 py-2 border border-indigo-200 shadow-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+  @apply inline-flex items-center px-4 py-2 border border-slate-200 shadow-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
 }
 
 .contact-button {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <slot/>
+    <slot />
   </div>
 </template>
 
@@ -14,17 +14,21 @@ query {
 </static-query>
 
 <script>
-import Navigation from '~/components/Navigation';
+import Navigation from "~/components/Navigation";
 
 export default {
   name: "Layout",
   components: {
-    Navigation,
-  },
-}
+    Navigation
+  }
+};
 </script>
 
 <style>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
