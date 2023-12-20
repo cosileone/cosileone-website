@@ -1,22 +1,19 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        display: ['Overpass', 'system-ui', 'sans-serif'],
-        body: ['Inter', 'system-ui', 'sans-serif'],
+        display: ["Overpass", "system-ui", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"]
       },
       borderRadius: {
-        'iphone': '28pt',
+        iphone: "28pt"
       },
       transitionProperty: {
-        visibility: ['visibility']
+        visibility: ["visibility"]
       }
-    },
+    }
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+  plugins: []
+};

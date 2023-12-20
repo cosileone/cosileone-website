@@ -1,6 +1,7 @@
 <template>
   <header
-    class="header flex items-center justify-between font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0 flex"
+    :class="[hasScrolled ? 'backdrop-blur-md bg-white/60' : 'bg-white']"
+    class="header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
     v-scroll="onScrollHandler"
   >
     <div class="h-16 w-48 flex items-center text-xl">
@@ -10,7 +11,7 @@
     </div>
     <nav class="nav hidden md:flex">
       <g-link class="nav__link" to="/">Home</g-link>
-<!--      <g-link class="nav__link" to="/about/">About</g-link>-->
+      <!--      <g-link class="nav__link" to="/about/">About</g-link>-->
     </nav>
     <div>
       <button
@@ -29,11 +30,35 @@
         @click.stop="isMenuOpen = !isMenuOpen"
         class="sm:inline-flex md:hidden items-center px-2 py-2 border shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
-        <svg v-if="!isMenuOpen" class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+        <svg
+          v-if="!isMenuOpen"
+          class="h-4 w-4"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"
+          />
         </svg>
-        <svg v-else class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <svg
+          v-else
+          class="h-4 w-4"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
     </div>
@@ -54,11 +79,17 @@
         aria-labelledby="options-menu"
       >
         <div class="py-1 text-center" role="none">
-          <g-link to="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  role="menuitem">Home
+          <g-link
+            to="/"
+            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            role="menuitem"
+            >Home
           </g-link>
-          <g-link to="/about/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  role="menuitem">About
+          <g-link
+            to="/about/"
+            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            role="menuitem"
+            >About
           </g-link>
         </div>
       </div>
@@ -67,42 +98,41 @@
 </template>
 
 <script>
-import {debounce} from 'lodash-es';
-import {scroll, clickOutside} from '~/directives'
+import { debounce } from "lodash-es";
+import { scroll, clickOutside } from "~/directives";
 
 export default {
   name: "Navigation",
   directives: {
     scroll,
-    clickOutside,
+    clickOutside
   },
   data() {
     return {
       hasScrolled: false,
-      isMenuOpen: false,
+      isMenuOpen: false
     };
   },
   computed: {},
   methods: {
-    onScrollHandler: debounce(function () {
+    onScrollHandler: debounce(function() {
       this.hasScrolled = window.scrollY > 0;
     }, 225),
     scrollToTop() {
       window.scroll({
         top: 0,
-        behavior: 'smooth',
-      })
+        behavior: "smooth"
+      });
     },
     closeMenu() {
       this.isMenuOpen = false;
-    },
-  },
-}
+    }
+  }
+};
 </script>
 
 <style scoped>
 .header {
-  background-color: white;
   /*box-shadow: rgba(0, 0, 0, 0.07) 0px 24px 32px -8px, rgba(0, 0, 0, 0.03) 0px 4px 32px 0px*/
   width: 80%;
 }
@@ -116,6 +146,5 @@ export default {
 }
 
 .hamburger-button {
-
 }
 </style>
