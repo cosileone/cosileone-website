@@ -1,23 +1,28 @@
 <template>
   <Layout>
-    <ContentTile id="top" class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm">
+    <ContentTile
+      id="top"
+      class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm"
+    >
       <div class="mt-32 md:mt-48 md:pb-48 text-center">
         <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>
-        <h1 class="mb-8 text-6xl text-gray-700 font-display font-extrabold tracking-tighter">Cosimo Leone</h1>
-        <p class="text-lg text-gray-500">I'm a senior software engineer with an eye&nbsp;for&nbsp;design.</p>
-        <p class="text-lg text-gray-500 mb-16">I build websites, Rest APIs, component libraries and I can bring your
-          company's web platform&nbsp;to&nbsp;life!</p>
+        <h1
+          class="mb-8 text-6xl text-gray-700 font-display font-extrabold tracking-tighter"
+        >
+          Cosimo Leone
+        </h1>
+        <p class="text-lg text-gray-500">
+          I'm a senior software engineer with an eye&nbsp;for&nbsp;design.
+        </p>
+        <p class="text-lg text-gray-500 mb-16">
+          I build websites, Rest APIs, component libraries and I can bring your
+          company's web platform&nbsp;to&nbsp;life!
+        </p>
         <div class="">
-          <a
-            href="#tools"
-            class="learn-more-button"
-          >
+          <a href="#tools" class="learn-more-button">
             Learn more
           </a>
-          <button
-            type="button"
-            class="contact-button ml-6"
-          >
+          <button type="button" class="contact-button ml-6">
             Get in touch
           </button>
         </div>
@@ -33,28 +38,33 @@
     <ContentTile class="bg-gray-50 shadow">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
-          <h4 id="tools" class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
+          <h4
+            id="tools"
+            class="text-gray-700 text-3xl font-display font-semibold tracking-tight"
+          >
             The tools I use
           </h4>
           <p class="font-body text-gray-700 mt-4">
-            These are the languages and frameworks I prefer to work with and the ones I reach for when building new
-            projects.
-            Despite working with many web technologies, these remain my favourites.
+            These are the languages and frameworks I prefer to work with and the
+            ones I reach for when building new projects. Despite working with
+            many web technologies, these remain my favourites.
           </p>
           <p class="hidden md:block font-body text-gray-700 mt-4">
-            For a full list of technologies I am familiar with and have used throughout my career,
-            go ahead and click the button below.
+            For a full list of technologies I am familiar with and have used
+            throughout my career, go ahead and click the button below.
           </p>
           <button
             type="button"
             class="hidden md:flex mt-6 bg-gradient-to-b hover:from-gray-50 hover:to-gray-50 from-white to-gray-50 items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
             @click="toggleShowMoreTech"
           >
-            View {{ showingMoreTech ? 'Less' : 'More' }}
+            View {{ showingMoreTech ? "Less" : "More" }}
           </button>
         </div>
         <div class="pl-0 md:pl-3">
-          <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          <ul
+            class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 xl:grid-cols-3"
+          >
             <GridListTile
               title="Vue"
               description="Preferred Frontend"
@@ -135,18 +145,18 @@
                 </div>
               </template>
             </GridListTile>
-              <GridListTile
-                      title="TypeScript"
-                      description="Typed JavaScript"
-                      href="https://www.typescriptlang.org/"
-              >
-                  <template #image>
-                      <g-image
-                              class="flex-shrink-0 w-16 h-16 p-2"
-                              src="~/assets/svg/typescript-logo.svg"
-                      ></g-image>
-                  </template>
-              </GridListTile>
+            <GridListTile
+              title="TypeScript"
+              description="Typed JavaScript"
+              href="https://www.typescriptlang.org/"
+            >
+              <template #image>
+                <g-image
+                  class="flex-shrink-0 w-16 h-16 p-2"
+                  src="~/assets/svg/typescript-logo.svg"
+                ></g-image>
+              </template>
+            </GridListTile>
             <GridListTile
               title="JavaScript"
               description="ES6+"
@@ -180,30 +190,29 @@
               class="md:hidden mt-6 bg-gradient-to-b hover:from-gray-50 hover:to-gray-50 from-white to-gray-50 items-center px-2.5 py-1.5 border border-gray-300 shadow-sm text-xs font-medium rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
               @click="toggleShowMoreTech"
             >
-              View {{ showingMoreTech ? 'Less' : 'More' }}
+              View {{ showingMoreTech ? "Less" : "More" }}
             </button>
           </div>
         </div>
       </div>
-      <div
-        v-show="showingMoreTech"
-        class="mt-6 xl:mt-4"
-      >
-        <ul class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6">
-            <GridListTile
-                    title="Django"
-                    description="v2+"
-                    href="https://djangoproject.com"
-            >
-                <template #image>
-                    <div class="flex w-16 items-center">
-                        <g-image
-                                class="w-full pl-3 pt-1"
-                                src="~/assets/svg/django-logo.svg"
-                        ></g-image>
-                    </div>
-                </template>
-            </GridListTile>
+      <div v-show="showingMoreTech" class="mt-6 xl:mt-4">
+        <ul
+          class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6"
+        >
+          <GridListTile
+            title="Django"
+            description="v2+"
+            href="https://djangoproject.com"
+          >
+            <template #image>
+              <div class="flex w-16 items-center">
+                <g-image
+                  class="w-full pl-3 pt-1"
+                  src="~/assets/svg/django-logo.svg"
+                ></g-image>
+              </div>
+            </template>
+          </GridListTile>
           <GridListTile
             title="Django Rest Framework"
             description="Django RESTful APIs"
@@ -268,109 +277,134 @@
               </div>
             </template>
           </GridListTile>
-            <GridListTile
-                    title="Storybook"
-                    description="Component Libraries"
-                    href="https://storybook.js.org/"
-            >
-                <template #image>
-                    <div class="flex items-center flex-shrink-0 w-16">
-                        <g-image
-                                class="pl-3 w-12"
-                                src="~/assets/svg/storybook.svg"
-                        ></g-image>
-                    </div>
-                </template>
-            </GridListTile>
+          <GridListTile
+            title="Storybook"
+            description="Component Libraries"
+            href="https://storybook.js.org/"
+          >
+            <template #image>
+              <div class="flex items-center flex-shrink-0 w-16">
+                <g-image
+                  class="pl-3 w-12"
+                  src="~/assets/svg/storybook.svg"
+                ></g-image>
+              </div>
+            </template>
+          </GridListTile>
         </ul>
       </div>
     </ContentTile>
     <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
       <div class="p-6">
-        <h4 class="text-gray-700 text-3xl font-display font-semibold tracking-tight">
+        <h4
+          class="text-gray-700 text-3xl font-display font-semibold tracking-tight"
+        >
           Fun projects I've worked on
         </h4>
-        <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+        <div
+          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+        >
           <ProjectTile
             title="Auction Goblin"
             description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack."
             url="https://www.auctiongoblin.com"
           >
             <template #preview-image>
-              <g-image class="h-48 object-cover object-top md:w-full"
-                       src="~/assets/img/auction-goblin.webp"
-                       alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"/>
+              <g-image
+                class="h-48 object-cover object-top md:w-full"
+                src="~/assets/img/auction-goblin.webp"
+                alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
+              />
             </template>
             <template #badges>
-              <span class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 Next.js
               </span>
-              <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 Blizzard API
               </span>
-              <span class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 AWS
               </span>
-              <span class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 TypeScript (full stack)
               </span>
             </template>
           </ProjectTile>
-            <ProjectTile
-                    title="Pokemon Randomizer"
-                    description="Remix your favourite Pokemon from the original 151!"
-                    url="http://pokemon.cosileone.com"
-                    github-url="https://github.com/ohnorobo/pokemon"
-            >
-                <template #preview-image>
-                    <g-image class="h-48 w-full object-cover md:object-top"
-                             src="~/assets/img/poke-card2.png"
-                             alt="Preview picture of the Pokemon randomizer project"/>
-                </template>
-                <template #badges>
-              <span class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+          <ProjectTile
+            title="Pokemon Randomizer"
+            description="Remix your favourite Pokemon from the original 151!"
+            url="http://pokemon.cosileone.com"
+            github-url="https://github.com/ohnorobo/pokemon"
+          >
+            <template #preview-image>
+              <g-image
+                class="h-48 w-full object-cover md:object-top"
+                src="~/assets/img/poke-card2.png"
+                alt="Preview picture of the Pokemon randomizer project"
+              />
+            </template>
+            <template #badges>
+              <span
+                class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 Bootstrap
               </span>
-                    <span class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 Flask
               </span>
-                    <span class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 Python
               </span>
-                    <span class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span
+                class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
                 NLP
               </span>
-                </template>
-            </ProjectTile>
+            </template>
+          </ProjectTile>
         </div>
       </div>
     </ContentTile>
-    <ContentTile class="bg-gradient-to-bl from-purple-50 to-blue-50 flex justify-between items-center">
+    <ContentTile
+      class="bg-gradient-to-bl from-purple-50 to-blue-50 flex justify-between items-center"
+    >
       <div class="justify-self-end inline-flex items-center text-gray-500">
         <span class="text-sm inline-flex">Handmade by&nbsp;Cosi.</span>
         <!--        <span class="text-lg hidden md:inline-flex">&nbsp;🚀</span>-->
-
       </div>
       <div class="social-icons inline-flex text-gray-700">
         <!-- Linkedin -->
         <a href="https://www.linkedin.com/in/cosimoleone" class="footer-icon">
-          <Icon class="h-6 w-6" icon="linkedin"/>
+          <Icon class="h-6 w-6" icon="linkedin" />
         </a>
         <!-- Github -->
         <a href="https://github.com/cosileone" class="footer-icon">
-          <Icon class="h-6 w-6" icon="github"/>
+          <Icon class="h-6 w-6" icon="github" />
         </a>
         <!-- Instagram -->
         <a href="https://instagram.com/cosileone" class="footer-icon">
-          <Icon class="h-6 w-6" icon="instagram"/>
+          <Icon class="h-6 w-6" icon="instagram" />
         </a>
         <!-- Twitter -->
         <a href="https://twitter.com/cosileone" class="footer-icon">
-          <Icon class="h-6 w-6" icon="twitter"/>
+          <Icon class="h-6 w-6" icon="twitter" />
         </a>
         <!-- Medium -->
         <a href="https://medium.com/@cosileone" class="footer-icon">
-          <Icon class="h-6 w-6" icon="medium"/>
+          <Icon class="h-6 w-6" icon="medium" />
         </a>
       </div>
     </ContentTile>
@@ -378,27 +412,27 @@
 </template>
 
 <script>
-import ContentTile from '~/components/ContentTile';
-import Icon from '~/components/Icon';
-import GridListTile from '~/components/GridListTile';
-import ProjectTile from '~/components/ProjectTile';
+import ContentTile from "~/components/ContentTile";
+import Icon from "~/components/Icon";
+import GridListTile from "~/components/GridListTile";
+import ProjectTile from "~/components/ProjectTile";
 
 export default {
   components: { ContentTile, Icon, GridListTile, ProjectTile },
   metaInfo: {
-    title: 'Portfolio',
+    title: "Portfolio"
   },
   data() {
     return {
-      showingMoreTech: false,
+      showingMoreTech: false
     };
   },
   methods: {
     toggleShowMoreTech() {
       this.showingMoreTech = !this.showingMoreTech;
-    },
-  },
-}
+    }
+  }
+};
 </script>
 
 <style>
@@ -413,5 +447,4 @@ export default {
 .footer-icon {
   @apply mr-3;
 }
-
 </style>
