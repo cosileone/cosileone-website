@@ -305,7 +305,8 @@
           class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
         >
           <ProjectTile
-            title="Auction Goblin (www.auctiongoblin.com)"
+            title="Auction Goblin"
+            subtitle="www.auctiongoblin.com"
             description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack."
             url="https://www.auctiongoblin.com"
           >

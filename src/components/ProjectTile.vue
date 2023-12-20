@@ -18,6 +18,7 @@
           <p class="text-xl font-semibold text-gray-900">
             {{ title }}
           </p>
+          <p>{{ subtitle }}</p>
           <p class="mt-3 text-base text-gray-500">
             {{ description }}
           </p>
@@ -78,6 +79,10 @@ export default {
       default: null
     },
     githubUrl: {
+      type: String,
+      default: null
+    },
+    subtitle: {
       type: String,
       default: null
     }
