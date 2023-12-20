@@ -5,11 +5,11 @@
       class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm"
     >
       <div class="mt-32 md:mt-48 md:pb-48 text-center">
-        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>
+        <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h1
-          class="mb-8 text-6xl text-gray-700 font-display font-extrabold tracking-tighter"
+          class="mb-8 text-9xl text-gray-700 font-display font-extrabold tracking-tighter"
         >
-          Cosimo Leone
+          Cosi Leone
         </h1>
         <p class="text-lg text-gray-500">
           I'm a senior software engineer with an eye&nbsp;for&nbsp;design.
@@ -35,7 +35,131 @@
       <!--        </div>-->
       <!--      </div>-->
     </ContentTile>
-    <ContentTile class="bg-gray-50 shadow">
+    <ContentTile class="bg-gray-50 shadow"></ContentTile>
+    <ContentTile
+      class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm"
+    >
+      <div class="p-6">
+        <h4
+          class="text-gray-700 text-6xl font-display font-semibold tracking-tight"
+        >
+          Projects
+        </h4>
+        <div
+          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+        >
+          <ProjectTile
+            title="Bills of Knowledge"
+            subtitle="www.billsofknowledge.com"
+            description="This project is a banking app aimed at 18-27 year olds (gen Z) in Italy to help them manage their money by gamifiying their saving, and learn about personal finance through short-form videos."
+            url="https://www.billsofknowledge.com"
+          >
+            <template #preview-image>
+              <g-image
+                class="h-48 object-cover object-top md:w-full"
+                src="~/assets/img/bok.webp"
+                alt="Preview picture of the website of 'Bills of Knowledge'"
+              />
+            </template>
+            <template #badges>
+              <span
+                class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Next.js
+              </span>
+              <span
+                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Hubspot
+              </span>
+              <span
+                class="mr-2 bg-gray-100 text-gray-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Vercel
+              </span>
+              <span
+                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                TypeScript (full stack)
+              </span>
+            </template>
+          </ProjectTile>
+          <ProjectTile
+            title="Auction Goblin"
+            subtitle="www.auctiongoblin.com"
+            description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack and has over 2000 users signed up!"
+            url="https://www.auctiongoblin.com"
+          >
+            <template #preview-image>
+              <g-image
+                class="h-48 object-cover object-top md:w-full"
+                src="~/assets/img/auction-goblin.webp"
+                alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
+              />
+            </template>
+            <template #badges>
+              <span
+                class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Next.js
+              </span>
+              <span
+                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Blizzard API
+              </span>
+              <span
+                class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                AWS
+              </span>
+              <span
+                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                TypeScript (full stack)
+              </span>
+            </template>
+          </ProjectTile>
+          <!--          <ProjectTile-->
+          <!--            title="Pokemon Randomizer"-->
+          <!--            description="Remix your favourite Pokemon from the original 151!"-->
+          <!--            url="http://pokemon.cosileone.com"-->
+          <!--            github-url="https://github.com/ohnorobo/pokemon"-->
+          <!--          >-->
+          <!--            <template #preview-image>-->
+          <!--              <g-image-->
+          <!--                class="h-48 w-full object-cover md:object-top"-->
+          <!--                src="~/assets/img/poke-card2.png"-->
+          <!--                alt="Preview picture of the Pokemon randomizer project"-->
+          <!--              />-->
+          <!--            </template>-->
+          <!--            <template #badges>-->
+          <!--              <span-->
+          <!--                class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                Bootstrap-->
+          <!--              </span>-->
+          <!--              <span-->
+          <!--                class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                Flask-->
+          <!--              </span>-->
+          <!--              <span-->
+          <!--                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                Python-->
+          <!--              </span>-->
+          <!--              <span-->
+          <!--                class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                NLP-->
+          <!--              </span>-->
+          <!--            </template>-->
+          <!--          </ProjectTile>-->
+        </div>
+      </div>
+    </ContentTile>
+    <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
           <h4
@@ -292,91 +416,6 @@
             </template>
           </GridListTile>
         </ul>
-      </div>
-    </ContentTile>
-    <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
-      <div class="p-6">
-        <h4
-          class="text-gray-700 text-3xl font-display font-semibold tracking-tight"
-        >
-          Fun projects I've worked on
-        </h4>
-        <div
-          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
-        >
-          <ProjectTile
-            title="Auction Goblin"
-            subtitle="www.auctiongoblin.com"
-            description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack."
-            url="https://www.auctiongoblin.com"
-          >
-            <template #preview-image>
-              <g-image
-                class="h-48 object-cover object-top md:w-full"
-                src="~/assets/img/auction-goblin.webp"
-                alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
-              />
-            </template>
-            <template #badges>
-              <span
-                class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Next.js
-              </span>
-              <span
-                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Blizzard API
-              </span>
-              <span
-                class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                AWS
-              </span>
-              <span
-                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                TypeScript (full stack)
-              </span>
-            </template>
-          </ProjectTile>
-          <!--          <ProjectTile-->
-          <!--            title="Pokemon Randomizer"-->
-          <!--            description="Remix your favourite Pokemon from the original 151!"-->
-          <!--            url="http://pokemon.cosileone.com"-->
-          <!--            github-url="https://github.com/ohnorobo/pokemon"-->
-          <!--          >-->
-          <!--            <template #preview-image>-->
-          <!--              <g-image-->
-          <!--                class="h-48 w-full object-cover md:object-top"-->
-          <!--                src="~/assets/img/poke-card2.png"-->
-          <!--                alt="Preview picture of the Pokemon randomizer project"-->
-          <!--              />-->
-          <!--            </template>-->
-          <!--            <template #badges>-->
-          <!--              <span-->
-          <!--                class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
-          <!--              >-->
-          <!--                Bootstrap-->
-          <!--              </span>-->
-          <!--              <span-->
-          <!--                class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
-          <!--              >-->
-          <!--                Flask-->
-          <!--              </span>-->
-          <!--              <span-->
-          <!--                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
-          <!--              >-->
-          <!--                Python-->
-          <!--              </span>-->
-          <!--              <span-->
-          <!--                class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
-          <!--              >-->
-          <!--                NLP-->
-          <!--              </span>-->
-          <!--            </template>-->
-          <!--          </ProjectTile>-->
-        </div>
       </div>
     </ContentTile>
     <ContentTile
