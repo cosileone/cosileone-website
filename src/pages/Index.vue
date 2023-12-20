@@ -93,7 +93,7 @@
             <template #preview-image>
               <g-image
                 class="h-48 object-cover object-top md:w-full"
-                src="~/assets/img/auction-goblin.webp"
+                src="~/assets/img/auction-goblin2.webp"
                 alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
               />
             </template>
