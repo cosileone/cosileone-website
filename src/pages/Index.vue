@@ -2,19 +2,19 @@
   <Layout>
     <ContentTile
       id="top"
-      class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm"
+      class="bg-gradient-to-tr from-black to-gray-800 pb-64 shadow-sm"
     >
       <div class="mt-32 md:mt-48 md:pb-48 text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h1
-          class="mb-8 text-9xl text-gray-700 font-display font-extrabold tracking-tighter"
+          class="md:mb-40 mb-8 md:mt-80 text-8xl md:text-9xl text-gray-100 font-display font-bold tracking-tighter"
         >
           Cosi Leone
         </h1>
-        <p class="text-lg text-gray-500">
+        <p class="text-lg text-gray-300">
           I'm a senior software engineer with an eye&nbsp;for&nbsp;design.
         </p>
-        <p class="text-lg text-gray-500 mb-16">
+        <p class="text-lg text-gray-300 mb-16">
           I build websites, Rest APIs, component libraries and I can bring your
           company's web platform&nbsp;to&nbsp;life!
         </p>
@@ -23,7 +23,7 @@
             Learn more
           </a>
           <button type="button" class="contact-button ml-6">
-            Get in touch
+            Get a free quote
           </button>
         </div>
       </div>

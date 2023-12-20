@@ -1,7 +1,7 @@
 <template>
   <header
     :class="[hasScrolled ? 'backdrop-blur-md bg-white/60' : 'bg-white']"
-    class="header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
+    class="header group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
     v-scroll="onScrollHandler"
   >
     <div class="h-16 w-48 flex items-center text-xl">
@@ -10,7 +10,11 @@
       </strong>
     </div>
     <nav class="nav hidden md:flex">
-      <g-link class="nav__link" to="/">Home</g-link>
+      <!--      <g-link-->
+      <!--        class="text-sm px-4 py-2 font-medium rounded ml-5 hover:bg-gray-100 transition-all opacity-0 group-hover/header:opacity-100 group-hover/header:duration-300"-->
+      <!--        to="/"-->
+      <!--        >Home</g-link-->
+      <!--      >-->
       <!--      <g-link class="nav__link" to="/about/">About</g-link>-->
     </nav>
     <div>
@@ -24,7 +28,7 @@
       <button
         class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 border border-gray-50 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
-        Contact me
+        Contact Us
       </button>
       <button
         @click.stop="isMenuOpen = !isMenuOpen"
@@ -85,12 +89,12 @@
             role="menuitem"
             >Home
           </g-link>
-          <g-link
-            to="/about/"
-            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            role="menuitem"
-            >About
-          </g-link>
+          <!--          <g-link-->
+          <!--            to="/about/"-->
+          <!--            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"-->
+          <!--            role="menuitem"-->
+          <!--            >About-->
+          <!--          </g-link>-->
         </div>
       </div>
     </transition>
@@ -138,11 +142,6 @@ export default {
 }
 
 .nav {
-}
-
-.nav__link {
-  @apply text-sm px-4 py-2 font-medium rounded hover:bg-gray-100 transition-colors;
-  margin-left: 20px;
 }
 
 .hamburger-button {
