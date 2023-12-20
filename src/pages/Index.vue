@@ -305,7 +305,7 @@
           class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
         >
           <ProjectTile
-            title="Auction Goblin"
+            title="Auction Goblin (www.auctiongoblin.com)"
             description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack."
             url="https://www.auctiongoblin.com"
           >
@@ -339,42 +339,42 @@
               </span>
             </template>
           </ProjectTile>
-          <ProjectTile
-            title="Pokemon Randomizer"
-            description="Remix your favourite Pokemon from the original 151!"
-            url="http://pokemon.cosileone.com"
-            github-url="https://github.com/ohnorobo/pokemon"
-          >
-            <template #preview-image>
-              <g-image
-                class="h-48 w-full object-cover md:object-top"
-                src="~/assets/img/poke-card2.png"
-                alt="Preview picture of the Pokemon randomizer project"
-              />
-            </template>
-            <template #badges>
-              <span
-                class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Bootstrap
-              </span>
-              <span
-                class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Flask
-              </span>
-              <span
-                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Python
-              </span>
-              <span
-                class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                NLP
-              </span>
-            </template>
-          </ProjectTile>
+          <!--          <ProjectTile-->
+          <!--            title="Pokemon Randomizer"-->
+          <!--            description="Remix your favourite Pokemon from the original 151!"-->
+          <!--            url="http://pokemon.cosileone.com"-->
+          <!--            github-url="https://github.com/ohnorobo/pokemon"-->
+          <!--          >-->
+          <!--            <template #preview-image>-->
+          <!--              <g-image-->
+          <!--                class="h-48 w-full object-cover md:object-top"-->
+          <!--                src="~/assets/img/poke-card2.png"-->
+          <!--                alt="Preview picture of the Pokemon randomizer project"-->
+          <!--              />-->
+          <!--            </template>-->
+          <!--            <template #badges>-->
+          <!--              <span-->
+          <!--                class="mr-2 bg-purple-100 text-purple-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                Bootstrap-->
+          <!--              </span>-->
+          <!--              <span-->
+          <!--                class="mr-2 bg-gray-100 text-gray-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                Flask-->
+          <!--              </span>-->
+          <!--              <span-->
+          <!--                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                Python-->
+          <!--              </span>-->
+          <!--              <span-->
+          <!--                class="bg-yellow-100 text-yellow-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"-->
+          <!--              >-->
+          <!--                NLP-->
+          <!--              </span>-->
+          <!--            </template>-->
+          <!--          </ProjectTile>-->
         </div>
       </div>
     </ContentTile>
