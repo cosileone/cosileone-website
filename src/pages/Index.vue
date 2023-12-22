@@ -2,7 +2,7 @@
   <Layout>
     <ContentTile
       id="top"
-      class="bg-gradient-to-tr from-black to-slate-800 pb-64 shadow-sm"
+      class="bg-gradient-to-tr from-black to-slate-800 pb-64 shadow"
     >
       <div class="mt-32 md:mt-48 md:pb-48 text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
@@ -33,11 +33,11 @@
     </ContentTile>
     <ContentTile class="bg-gray-50 shadow"></ContentTile>
     <ContentTile
-      class="bg-gradient-to-tr from-indigo-200 to-blue-50 pb-64 shadow-sm"
+      class="bg-gradient-to-tl from-slate-900 to-slate-700 pb-64 shadow"
     >
       <div class="p-6">
         <h4
-          class="text-gray-700 text-6xl font-display font-semibold tracking-tight"
+          class="text-slate-50 text-6xl font-display font-semibold tracking-tight"
         >
           Projects
         </h4>
@@ -155,21 +155,21 @@
         </div>
       </div>
     </ContentTile>
-    <ContentTile class="bg-gradient-to-br from-blue-50 to-purple-100 shadow">
+    <ContentTile class="bg-gradient-to-tl from-black to-gray-800 shadow">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
           <h4
             id="tools"
-            class="text-gray-700 text-3xl font-display font-semibold tracking-tight"
+            class="text-slate-50 text-3xl font-display font-semibold tracking-tight"
           >
             The tools I use
           </h4>
-          <p class="font-body text-gray-700 mt-4">
+          <p class="font-body text-slate-200 mt-4">
             These are the languages and frameworks I prefer to work with and the
             ones I reach for when building new projects. Despite working with
             many web technologies, these remain my favourites.
           </p>
-          <p class="hidden md:block font-body text-gray-700 mt-4">
+          <p class="hidden md:block font-body text-slate-200 mt-4">
             For a full list of technologies I am familiar with and have used
             throughout my career, go ahead and click the button below.
           </p>
@@ -391,15 +391,15 @@
       </div>
     </ContentTile>
     <ContentTile
-      class="bg-gradient-to-bl from-purple-50 to-blue-50 flex justify-between items-center"
+      class="bg-gradient-to-tr from-slate-700 to-slate-900 flex justify-between items-center"
     >
-      <div class="justify-self-end inline-flex items-center text-gray-500">
+      <div class="justify-self-end inline-flex items-center text-slate-50">
         <span class="text-sm inline-flex">
           Handmade by&nbsp;Cosi Leone, LLC. 🍿
         </span>
         <!--        <span class="text-lg hidden md:inline-flex">&nbsp;🚀</span>-->
       </div>
-      <div class="social-icons inline-flex text-gray-700">
+      <div class="social-icons inline-flex text-slate-50">
         <!-- Linkedin -->
         <a href="https://www.linkedin.com/in/cosimoleone" class="footer-icon">
           <Icon class="h-6 w-6" icon="linkedin" />
