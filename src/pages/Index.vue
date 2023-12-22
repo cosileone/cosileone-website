@@ -183,7 +183,7 @@
         </div>
         <div class="pl-0 md:pl-3">
           <ul
-            class="grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 xl:grid-cols-3"
+            class="grid grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-2 xl:grid-cols-3"
           >
             <GridListTile
               title="Vue"
@@ -230,10 +230,7 @@
             >
               <template #image>
                 <div class="flex w-16 items-center">
-                  <img
-                    class="w-full pl-3 pt-1"
-                    src="/svg/nextjs-logo.svg"
-                  />
+                  <img class="w-full pl-3 pt-1" src="/svg/nextjs-logo.svg" />
                 </div>
               </template>
             </GridListTile>
@@ -244,10 +241,7 @@
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center">
-                  <img
-                    class="w-full pl-3 pt-2"
-                    src="/svg/nodejs-logo.svg"
-                  />
+                  <img class="w-full pl-3 pt-2" src="/svg/nodejs-logo.svg" />
                 </div>
               </template>
             </GridListTile>
@@ -284,10 +278,7 @@
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center p-2">
-                  <img
-                    class="w-full rounded"
-                    src="/svg/js-logo.svg"
-                  />
+                  <img class="w-full rounded" src="/svg/js-logo.svg" />
                 </div>
               </template>
             </GridListTile>
@@ -326,10 +317,7 @@
           >
             <template #image>
               <div class="flex w-16 items-center">
-                <img
-                  class="w-full pl-3 pt-1"
-                  src="/svg/django-logo.svg"
-                />
+                <img class="w-full pl-3 pt-1" src="/svg/django-logo.svg" />
               </div>
             </template>
           </GridListTile>
@@ -340,10 +328,7 @@
           >
             <template #image>
               <div class="flex flex-shrink-0 w-16 items-center">
-                <img
-                  class="pl-2"
-                  src="/img/logos/drf-logo.png"
-                />
+                <img class="pl-2" src="/img/logos/drf-logo.png" />
               </div>
             </template>
           </GridListTile>
@@ -365,10 +350,7 @@
             href="https://webpack.js.org/"
           >
             <template #image>
-              <img
-                class="flex-shrink-0 w-16 h-16 p-2"
-                src="/svg/webpack.svg"
-              />
+              <img class="flex-shrink-0 w-16 h-16 p-2" src="/svg/webpack.svg" />
             </template>
           </GridListTile>
           <GridListTile
@@ -390,10 +372,7 @@
           >
             <template #image>
               <div class="flex w-16 items-center">
-                <img
-                  class="w-full pl-3 pt-1"
-                  src="/svg/jquery-logo.svg"
-                />
+                <img class="w-full pl-3 pt-1" src="/svg/jquery-logo.svg" />
               </div>
             </template>
           </GridListTile>
@@ -404,10 +383,7 @@
           >
             <template #image>
               <div class="flex items-center flex-shrink-0 w-16">
-                <img
-                  class="pl-3 w-12"
-                  src="/svg/storybook.svg"
-                />
+                <img class="pl-3 w-12" src="/svg/storybook.svg" />
               </div>
             </template>
           </GridListTile>
@@ -454,10 +430,10 @@ import ContentTile from "/src/components/ContentTile";
 import Icon from "/src/components/Icon";
 import GridListTile from "/src/components/GridListTile";
 import ProjectTile from "/src/components/ProjectTile";
-import Layout from '/src/layouts/Default';
+import Layout from "/src/layouts/Default";
 
 export default {
-  components: {Layout, ContentTile, Icon, GridListTile, ProjectTile },
+  components: { Layout, ContentTile, Icon, GridListTile, ProjectTile },
   metaInfo: {
     title: "Portfolio"
   },

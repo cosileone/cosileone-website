@@ -121,7 +121,6 @@ export default {
   computed: {},
   methods: {
     onScrollHandler: debounce(function() {
-      console.log("scroll");
       this.hasScrolled = window.scrollY > 0;
     }, 225),
     scrollToTop() {
