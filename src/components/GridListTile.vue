@@ -1,5 +1,7 @@
 <template>
-  <li class="col-span-1 shadow-sm rounded-md border border-gray-200 bg-white">
+  <li
+    class="col-span-1 shadow-sm rounded-md border border-gray-700 bg-slate-800"
+  >
     <component :is="$attrs.href ? 'a' : 'span'" v-bind="$attrs" class="flex">
       <slot>
         <slot name="image">
@@ -11,10 +13,10 @@
       </slot>
       <div class="flex-1 flex items-center justify-between truncate">
         <div class="flex-1 px-4 py-2 text-sm truncate">
-          <p class="text-gray-900 font-medium hover:text-gray-600">
+          <p class="text-slate-50 font-medium hover:text-slate-400">
             {{ title }}
           </p>
-          <p class="text-gray-500 truncate" :title="description">
+          <p class="text-slate-400 truncate" :title="description">
             {{ description }}
           </p>
         </div>

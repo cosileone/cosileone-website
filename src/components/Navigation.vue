@@ -1,6 +1,6 @@
 <template>
   <header
-    :class="[hasScrolled ? 'backdrop-blur-md bg-white/60' : 'bg-white']"
+    :class="[hasScrolled ? 'backdrop-blur-md bg-slate-100/60' : 'bg-slate-100']"
     class="header group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
   >
     <div class="h-16 w-48 flex items-center text-xl">

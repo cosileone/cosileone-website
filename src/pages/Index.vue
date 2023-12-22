@@ -31,7 +31,7 @@
       <!--        </div>-->
       <!--      </div>-->
     </ContentTile>
-    <ContentTile class="bg-gray-50 shadow"></ContentTile>
+    <!--    <ContentTile class="bg-gray-50 shadow"></ContentTile>-->
     <ContentTile
       class="bg-gradient-to-tl from-slate-900 to-slate-700 pb-64 shadow"
     >
@@ -391,7 +391,7 @@
       </div>
     </ContentTile>
     <ContentTile
-      class="bg-gradient-to-tr from-slate-700 to-slate-900 flex justify-between items-center"
+      class="bg-gradient-to-bl from-slate-700 to-slate-900 flex justify-between items-center"
     >
       <div class="justify-self-end inline-flex items-center text-slate-50">
         <span class="text-sm inline-flex">
