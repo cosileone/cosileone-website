@@ -6,7 +6,7 @@
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <strong>
-        <g-link to="/">portfolio.</g-link>
+        <NuxtLink to="/">portfolio.</NuxtLink>
       </strong>
     </div>
     <nav class="nav hidden md:flex">
@@ -76,19 +76,19 @@
     >
       <div
         v-show="isMenuOpen"
-        v-click-outside="closeMenu"
+        v-on-click-outside="closeMenu"
         class="block md:hidden origin-top-right absolute top-16 right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="options-menu"
       >
         <div class="py-1 text-center" role="none">
-          <g-link
+          <NuxtLink
             to="/"
             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
             role="menuitem"
             >Home
-          </g-link>
+          </NuxtLink>
           <!--          <g-link-->
           <!--            to="/about/"-->
           <!--            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"-->
@@ -102,14 +102,15 @@
 </template>
 
 <script>
-import { debounce } from "lodash-es";
-import { scroll, clickOutside } from "~/directives";
+import debounce from "lodash-es/debounce";
+import { scroll } from "/src/directives";
+import { vOnClickOutside } from "@vueuse/components";
 
 export default {
   name: "Navigation",
   directives: {
     scroll,
-    clickOutside
+    onClickOutside: vOnClickOutside
   },
   data() {
     return {
@@ -120,6 +121,7 @@ export default {
   computed: {},
   methods: {
     onScrollHandler: debounce(function() {
+      console.log("scroll");
       this.hasScrolled = window.scrollY > 0;
     }, 225),
     scrollToTop() {

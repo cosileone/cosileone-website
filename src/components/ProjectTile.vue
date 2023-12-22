@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import Icon from "~/components/Icon";
+import Icon from "/src/components/Icon";
 
 export default {
   name: "ProjectTile",

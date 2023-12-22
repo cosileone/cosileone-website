@@ -51,9 +51,9 @@
             url="https://www.billsofknowledge.com"
           >
             <template #preview-image>
-              <g-image
+              <img
                 class="h-48 object-cover object-top md:w-full"
-                src="~/assets/img/bok.webp"
+                src="/img/bok.webp"
                 alt="Preview picture of the website of 'Bills of Knowledge'"
               />
             </template>
@@ -87,9 +87,9 @@
             url="https://www.auctiongoblin.com"
           >
             <template #preview-image>
-              <g-image
+              <img
                 class="h-48 object-cover object-top md:w-full"
-                src="~/assets/img/auction-goblin2.webp"
+                src="/img/auction-goblin2.webp"
                 alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
               />
             </template>
@@ -123,9 +123,9 @@
           <!--            github-url="https://github.com/ohnorobo/pokemon"-->
           <!--          >-->
           <!--            <template #preview-image>-->
-          <!--              <g-image-->
+          <!--              <img-->
           <!--                class="h-48 w-full object-cover md:object-top"-->
-          <!--                src="~/assets/img/poke-card2.png"-->
+          <!--                src="/img/poke-card2.png"-->
           <!--                alt="Preview picture of the Pokemon randomizer project"-->
           <!--              />-->
           <!--            </template>-->
@@ -191,10 +191,10 @@
               href="https://vuejs.org"
             >
               <template #image>
-                <g-image
+                <img
                   class="flex-shrink-0 w-16 h-16 p-2"
-                  src="~/assets/svg/vuejs-logo.svg"
-                ></g-image>
+                  src="/svg/vuejs-logo.svg"
+                />
               </template>
             </GridListTile>
             <GridListTile
@@ -203,10 +203,10 @@
               href="https://reactjs.org"
             >
               <template #image>
-                <g-image
+                <img
                   class="flex-shrink-0 w-16 h-16"
-                  src="~/assets/svg/react-logo.svg"
-                ></g-image>
+                  src="/svg/react-logo.svg"
+                />
               </template>
             </GridListTile>
             <GridListTile
@@ -216,10 +216,10 @@
             >
               <template #image>
                 <div class="flex w-16 items-center">
-                  <g-image
+                  <img
                     class="w-full pl-3 pt-1"
-                    src="~/assets/svg/tailwindcss-logo.svg"
-                  ></g-image>
+                    src="/svg/tailwindcss-logo.svg"
+                  />
                 </div>
               </template>
             </GridListTile>
@@ -230,10 +230,10 @@
             >
               <template #image>
                 <div class="flex w-16 items-center">
-                  <g-image
+                  <img
                     class="w-full pl-3 pt-1"
-                    src="~/assets/svg/nextjs-logo.svg"
-                  ></g-image>
+                    src="/svg/nextjs-logo.svg"
+                  />
                 </div>
               </template>
             </GridListTile>
@@ -244,10 +244,10 @@
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center">
-                  <g-image
+                  <img
                     class="w-full pl-3 pt-2"
-                    src="~/assets/svg/nodejs-logo.svg"
-                  ></g-image>
+                    src="/svg/nodejs-logo.svg"
+                  />
                 </div>
               </template>
             </GridListTile>
@@ -258,10 +258,10 @@
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center">
-                  <g-image
+                  <img
                     class="flex-shrink-0 pl-2"
-                    src="~/assets/img/logos/expressjs.png"
-                  ></g-image>
+                    src="/img/logos/expressjs.png"
+                  />
                 </div>
               </template>
             </GridListTile>
@@ -271,10 +271,10 @@
               href="https://www.typescriptlang.org/"
             >
               <template #image>
-                <g-image
+                <img
                   class="flex-shrink-0 w-16 h-16 p-2"
-                  src="~/assets/svg/typescript-logo.svg"
-                ></g-image>
+                  src="/svg/typescript-logo.svg"
+                />
               </template>
             </GridListTile>
             <GridListTile
@@ -284,10 +284,10 @@
             >
               <template #image>
                 <div class="flex flex-shrink-0 w-16 items-center p-2">
-                  <g-image
+                  <img
                     class="w-full rounded"
-                    src="~/assets/svg/js-logo.svg"
-                  ></g-image>
+                    src="/svg/js-logo.svg"
+                  />
                 </div>
               </template>
             </GridListTile>
@@ -297,10 +297,10 @@
               href="https://python.org"
             >
               <template #image>
-                <g-image
+                <img
                   class="flex-shrink-0 w-16 h-16 p-2"
-                  src="~/assets/svg/python-logo.svg"
-                ></g-image>
+                  src="/svg/python-logo.svg"
+                />
               </template>
             </GridListTile>
           </ul>
@@ -326,10 +326,10 @@
           >
             <template #image>
               <div class="flex w-16 items-center">
-                <g-image
+                <img
                   class="w-full pl-3 pt-1"
-                  src="~/assets/svg/django-logo.svg"
-                ></g-image>
+                  src="/svg/django-logo.svg"
+                />
               </div>
             </template>
           </GridListTile>
@@ -340,10 +340,10 @@
           >
             <template #image>
               <div class="flex flex-shrink-0 w-16 items-center">
-                <g-image
+                <img
                   class="pl-2"
-                  src="~/assets/img/logos/drf-logo.png"
-                ></g-image>
+                  src="/img/logos/drf-logo.png"
+                />
               </div>
             </template>
           </GridListTile>
@@ -353,10 +353,10 @@
             href="https://flask.palletsprojects.com/en/1.1.x/"
           >
             <template #image>
-              <g-image
+              <img
                 class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/flask-logo.svg"
-              ></g-image>
+                src="/svg/flask-logo.svg"
+              />
             </template>
           </GridListTile>
           <GridListTile
@@ -365,10 +365,10 @@
             href="https://webpack.js.org/"
           >
             <template #image>
-              <g-image
+              <img
                 class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/webpack.svg"
-              ></g-image>
+                src="/svg/webpack.svg"
+              />
             </template>
           </GridListTile>
           <GridListTile
@@ -377,10 +377,10 @@
             href="https://getbootstrap.com"
           >
             <template #image>
-              <g-image
+              <img
                 class="flex-shrink-0 w-16 h-16 p-2"
-                src="~/assets/svg/bootstrap-logo.svg"
-              ></g-image>
+                src="/svg/bootstrap-logo.svg"
+              />
             </template>
           </GridListTile>
           <GridListTile
@@ -390,10 +390,10 @@
           >
             <template #image>
               <div class="flex w-16 items-center">
-                <g-image
+                <img
                   class="w-full pl-3 pt-1"
-                  src="~/assets/svg/jquery-logo.svg"
-                ></g-image>
+                  src="/svg/jquery-logo.svg"
+                />
               </div>
             </template>
           </GridListTile>
@@ -404,10 +404,10 @@
           >
             <template #image>
               <div class="flex items-center flex-shrink-0 w-16">
-                <g-image
+                <img
                   class="pl-3 w-12"
-                  src="~/assets/svg/storybook.svg"
-                ></g-image>
+                  src="/svg/storybook.svg"
+                />
               </div>
             </template>
           </GridListTile>
@@ -450,13 +450,14 @@
 </template>
 
 <script>
-import ContentTile from "~/components/ContentTile";
-import Icon from "~/components/Icon";
-import GridListTile from "~/components/GridListTile";
-import ProjectTile from "~/components/ProjectTile";
+import ContentTile from "/src/components/ContentTile";
+import Icon from "/src/components/Icon";
+import GridListTile from "/src/components/GridListTile";
+import ProjectTile from "/src/components/ProjectTile";
+import Layout from '/src/layouts/Default';
 
 export default {
-  components: { ContentTile, Icon, GridListTile, ProjectTile },
+  components: {Layout, ContentTile, Icon, GridListTile, ProjectTile },
   metaInfo: {
     title: "Portfolio"
   },
