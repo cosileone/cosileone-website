@@ -2,7 +2,6 @@
   <header
     :class="[hasScrolled ? 'backdrop-blur-md bg-white/60' : 'bg-white']"
     class="header group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
-    v-scroll="onScrollHandler"
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <strong>
@@ -26,7 +25,7 @@
         Back to top
       </button>
       <button
-        class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 border border-gray-50 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 border-gray-50 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
         Contact Us
       </button>
@@ -103,7 +102,6 @@
 
 <script>
 import debounce from "lodash-es/debounce";
-import { scroll } from "/src/directives";
 import { vOnClickOutside } from "@vueuse/components";
 
 export default {
@@ -119,6 +117,12 @@ export default {
     };
   },
   computed: {},
+  created() {
+    window.addEventListener("scroll", this.onScrollHandler);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.onScrollHandler);
+  },
   methods: {
     onScrollHandler: debounce(function() {
       this.hasScrolled = window.scrollY > 0;
