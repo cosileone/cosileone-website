@@ -25,7 +25,7 @@
         Back to top
       </button>
       <button
-        class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 border-gray-50 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
         Contact Us
       </button>
@@ -75,7 +75,7 @@
     >
       <div
         v-show="isMenuOpen"
-        v-on-click-outside="closeMenu"
+        ref="clickOutsideRef"
         class="block md:hidden origin-top-right absolute top-16 right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
         role="menu"
         aria-orientation="vertical"
@@ -100,44 +100,35 @@
   </header>
 </template>
 
-<script>
+<script setup lang="ts">
 import debounce from "lodash-es/debounce";
-import { vOnClickOutside } from "@vueuse/components";
+import { onClickOutside } from '@vueuse/core';
 
-export default {
-  name: "Navigation",
-  directives: {
-    scroll,
-    onClickOutside: vOnClickOutside
-  },
-  data() {
-    return {
-      hasScrolled: false,
-      isMenuOpen: false
-    };
-  },
-  computed: {},
-  created() {
-    window.addEventListener("scroll", this.onScrollHandler);
-  },
-  unmounted() {
-    window.removeEventListener("scroll", this.onScrollHandler);
-  },
-  methods: {
-    onScrollHandler: debounce(function() {
-      this.hasScrolled = window.scrollY > 0;
-    }, 225),
-    scrollToTop() {
-      window.scroll({
-        top: 0,
-        behavior: "smooth"
-      });
-    },
-    closeMenu() {
-      this.isMenuOpen = false;
-    }
-  }
-};
+const clickOutsideRef = ref(null);
+const isMenuOpen = ref(false);
+const hasScrolled = ref(false);
+
+const onScrollHandler = debounce(function() {
+  hasScrolled.value = window.scrollY > 0;
+}, 225);
+
+const scrollToTop = () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+onClickOutside(clickOutsideRef, () => {
+  isMenuOpen.value = false;
+});
+
+onMounted(() => {
+  window.addEventListener("scroll", onScrollHandler);
+});
+onUnmounted(() => {
+  window.removeEventListener("scroll", onScrollHandler);
+});
 </script>
 
 <style scoped>
