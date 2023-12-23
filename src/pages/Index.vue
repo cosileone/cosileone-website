@@ -32,7 +32,7 @@
       <!--      </div>-->
     </ContentTile>
     <ContentTile
-      class="bg-gradient-to-bl from-slate-100 to-slate-200 shadow p-4"
+      class="bg-gradient-to-bl from-slate-100 to-slate-200 shadow p-4 pb-8"
     >
       <div class="p-6 flex flex-col gap-12">
         <h2
@@ -45,9 +45,9 @@
             E-commerce
           </h3>
           <div class="col-span-2">
-            <p class="font-body text-slate-700 mt-4">
+            <p class="font-body text-balance text-slate-700 mt-4">
               Having worked at Amazon I bring with me the collective experience
-              of a global ecommerce company. I can help you build your first
+              of a global ecommerce giant. I can help you build your first
               online store or improve your existing one, and increase your sales
               with industry best practices.
             </p>
@@ -58,8 +58,8 @@
             Tech Startups
           </h3>
           <div class="col-span-2">
-            <p class="font-body text-slate-700 mt-4">
-              I have launched several startups and now have a battle tested set
+            <p class="font-body text-balance text-slate-700 mt-4">
+              I have launched several startups and now have a battle-tested set
               of tools and strategies to help you get your idea off the ground.
               I can help you build your MVP, and scale it to as many users as
               you'll ever need.
@@ -71,10 +71,11 @@
             Individuals
           </h3>
           <div class="col-span-2">
-            <p class="font-body text-slate-700 mt-4">
+            <p class="font-body text-balance text-slate-700 mt-4">
               Big ideas in mind? I can help you get there and there is no
               obligation until we agree on a plan. I can help you build your
-              online presence and get your personal brand out there.
+              online presence and get your personal brand out there in the best
+              way possible.
             </p>
           </div>
         </div>
@@ -85,7 +86,7 @@
     >
       <div class="p-6">
         <h2
-          class="text-slate-50 text-6xl font-display font-semibold tracking-tight"
+          class="text-slate-50 text-6xl font-display font-semibold tracking-tight pb-6"
         >
           Recent Successes
         </h2>
@@ -206,12 +207,80 @@
     <ContentTile
       class="bg-gradient-to-bl from-slate-100 to-slate-200 shadow p-4"
     >
-      <div class="p-6 flex flex-col gap-12">
+      <div class="p-6">
         <h2
           class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10"
         >
           The Process
         </h2>
+        <div class="flex flex-col gap-12 max-w-[1200px] mx-auto">
+          <div class="sm:flex gap-12">
+            <h3 class="font-display text-6xl text-slate-300 font-bold shrink-0">
+              1. Intro<span class="hidden sm:inline">duce</span>
+            </h3>
+            <div>
+              <p class="font-body text-balance text-slate-500 mt-4">
+                <i>
+                  "Usually I like to have an initial phone call to say hello,
+                  talk about who I am and what it is you need to get done for
+                  this project. After which, we can start outlining the
+                  requirements of the project and determine what our goals are."
+                </i>
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex flex-row-reverse gap-12">
+            <h3
+              class="font-display text-6xl text-slate-300 font-bold shrink-0 text-right"
+            >
+              2. Plan
+            </h3>
+            <div>
+              <p class="font-body text-balance text-slate-500 mt-4">
+                <i>
+                  "After some preliminary research, I'll present a timeline that
+                  we can go through together, agree on a budget and get started.
+                  We'll also discuss what our communication and feedback loop
+                  will look like, so that the details don't get lost in
+                  translation."
+                </i>
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex gap-12">
+            <h3
+              class="font-display text-6xl text-slate-300 font-bold shrink-0 whitespace-nowrap"
+            >
+              3. Develop
+            </h3>
+            <div>
+              <p class="font-body text-balance text-slate-500 mt-4">
+                <i>
+                  "Once we have a clear idea of what we want to achieve, I will
+                  start working on a first version. Depending on the complexity
+                  of the project this step may require some back and forth."
+                </i>
+              </p>
+            </div>
+          </div>
+          <div class="sm:flex flex-row-reverse gap-12">
+            <h3
+              class="font-display text-6xl text-slate-300 font-bold shrink-0 text-right"
+            >
+              4. Deliver
+            </h3>
+            <div>
+              <p class="font-body text-balance text-slate-500 mt-4">
+                <i>
+                  "Delivery means we are at the finish line of the project. Any
+                  work beyond this point will usually be limited to rounds of
+                  revision. The number of revisions will depend on each project,
+                  but I will always guarantee at least one round."
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </ContentTile>
     <ContentTile class="bg-gradient-to-tl from-black to-gray-800 shadow p-4">
@@ -455,7 +524,7 @@
     >
       <div class="justify-self-end inline-flex items-center text-slate-50">
         <span class="text-sm inline-flex">
-          Handmade by&nbsp;Cosi Leone, LLC. 🍿
+          Handmade by&nbsp;Cosi 🍿
         </span>
         <!--        <span class="text-lg hidden md:inline-flex">&nbsp;🚀</span>-->
       </div>
