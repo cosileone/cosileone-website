@@ -2,16 +2,16 @@
   <Layout>
     <ContentTile
       id="top"
-      class="bg-gradient-to-tr from-black to-slate-800 pb-64 shadow"
+      class="bg-gradient-to-tr from-black to-slate-800 shadow pb-16"
     >
-      <div class="mt-32 md:mt-48 md:pb-48 text-center">
+      <div class="text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h1
-          class="md:mb-40 mb-52 mt-[200px] md:mt-80 text-8xl md:text-9xl text-slate-50 font-display font-bold tracking-tighter"
+          class="md:pb-40 pb-52 pt-[200px] md:pt-80 text-8xl md:text-9xl text-slate-50 font-display font-bold tracking-tighter"
         >
           Cosi Leone
         </h1>
-        <p class="text-lg text-slate-300 tracking-tight">
+        <p class="text-lg text-slate-300 tracking-tight text-balance">
           Best-in-class web development for your business.
         </p>
         <div class="mt-20 md:mt-28 mb-4">
@@ -31,23 +31,71 @@
       <!--        </div>-->
       <!--      </div>-->
     </ContentTile>
-    <!--    <ContentTile class="bg-gray-50 shadow"></ContentTile>-->
     <ContentTile
-      class="bg-gradient-to-tl from-slate-900 to-slate-700 pb-64 shadow"
+      class="bg-gradient-to-bl from-slate-100 to-slate-200 shadow p-4"
+    >
+      <div class="p-6 flex flex-col gap-12">
+        <h2
+          class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10"
+        >
+          How can I help you?
+        </h2>
+        <div class="grid md:grid-cols-3">
+          <h3 class="font-display text-4xl text-slate-600 font-semibold">
+            E-commerce
+          </h3>
+          <div class="col-span-2">
+            <p class="font-body text-slate-700 mt-4">
+              Having worked at Amazon I bring with me the collective experience
+              of a global ecommerce company. I can help you build your first
+              online store or improve your existing one, and increase your sales
+              with industry best practices.
+            </p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3">
+          <h3 class="font-display text-4xl text-slate-600 font-semibold">
+            Tech Startups
+          </h3>
+          <div class="col-span-2">
+            <p class="font-body text-slate-700 mt-4">
+              I have launched several startups and now have a battle tested set
+              of tools and strategies to help you get your idea off the ground.
+              I can help you build your MVP, and scale it to as many users as
+              you'll ever need.
+            </p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3">
+          <h3 class="font-display text-4xl text-slate-600 font-semibold">
+            Individuals
+          </h3>
+          <div class="col-span-2">
+            <p class="font-body text-slate-700 mt-4">
+              Big ideas in mind? I can help you get there and there is no
+              obligation until we agree on a plan. I can help you build your
+              online presence and get your personal brand out there.
+            </p>
+          </div>
+        </div>
+      </div>
+    </ContentTile>
+    <ContentTile
+      class="bg-gradient-to-tl from-slate-900 to-slate-700 shadow p-4"
     >
       <div class="p-6">
-        <h4
+        <h2
           class="text-slate-50 text-6xl font-display font-semibold tracking-tight"
         >
-          Projects
-        </h4>
+          Recent Successes
+        </h2>
         <div
-          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none"
         >
           <ProjectTile
             title="Bills of Knowledge"
             subtitle="www.billsofknowledge.com"
-            description="This project is a banking app aimed at 18-27 year olds (gen Z) in Italy to help them manage their money by gamifiying their saving, and learn about personal finance through short-form videos."
+            description="Bills of Knowledge is a banking app aimed at the Italian Generation Z (18-27 year olds) to help them manage their money by gamifiying their saving, and learn about personal finance through short TikTok videos."
             url="https://www.billsofknowledge.com"
           >
             <template #preview-image>
@@ -83,7 +131,7 @@
           <ProjectTile
             title="Auction Goblin"
             subtitle="www.auctiongoblin.com"
-            description="Master the World of Warcraft Classic economy with all the information from the Auction House at your fingertips. This project was built with the esteemed T3 stack and has over 2000 users signed up!"
+            description="Auction Goblin is the Bloomberg terminal for World of Warcraft Classic, and helps players dominate the economic side of the game. This project was built with the esteemed T3 stack, and has over 2000 users signed up."
             url="https://www.auctiongoblin.com"
           >
             <template #preview-image>
@@ -155,15 +203,26 @@
         </div>
       </div>
     </ContentTile>
-    <ContentTile class="bg-gradient-to-tl from-black to-gray-800 shadow">
+    <ContentTile
+      class="bg-gradient-to-bl from-slate-100 to-slate-200 shadow p-4"
+    >
+      <div class="p-6 flex flex-col gap-12">
+        <h2
+          class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10"
+        >
+          The Process
+        </h2>
+      </div>
+    </ContentTile>
+    <ContentTile class="bg-gradient-to-tl from-black to-gray-800 shadow p-4">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
-          <h4
+          <h3
             id="tools"
             class="text-slate-50 text-3xl font-display font-semibold tracking-tight"
           >
             The tools I use
-          </h4>
+          </h3>
           <p class="font-body text-slate-200 mt-4">
             These are the languages and frameworks I prefer to work with and the
             ones I reach for when building new projects. Despite working with
@@ -183,29 +242,30 @@
         </div>
         <div class="pl-0 md:pl-3">
           <ul
-            class="grid grid-cols-1 gap-5 sm:gap-6 lg:grid-cols-2 xl:grid-cols-3"
+            class="grid gri
+            d-cols-1 gap-5 sm:gap-6 lg:grid-cols-2 xl:grid-cols-3"
           >
             <GridListTile
-              title="Vue"
-              description="Preferred Frontend"
-              href="https://vuejs.org"
-            >
-              <template #image>
-                <img
-                  class="flex-shrink-0 w-16 h-16 p-2"
-                  src="/svg/vuejs-logo.svg"
-                />
-              </template>
-            </GridListTile>
-            <GridListTile
               title="React"
-              description="Frontend Alternative"
+              description="Preferred Frontend"
               href="https://reactjs.org"
             >
               <template #image>
                 <img
                   class="flex-shrink-0 w-16 h-16"
                   src="/svg/react-logo.svg"
+                />
+              </template>
+            </GridListTile>
+            <GridListTile
+              title="Vue"
+              description="Frontend Alternative"
+              href="https://vuejs.org"
+            >
+              <template #image>
+                <img
+                  class="flex-shrink-0 w-16 h-16 p-2"
+                  src="/svg/vuejs-logo.svg"
                 />
               </template>
             </GridListTile>
@@ -391,7 +451,7 @@
       </div>
     </ContentTile>
     <ContentTile
-      class="bg-gradient-to-bl from-slate-700 to-slate-900 flex justify-between items-center"
+      class="bg-gradient-to-bl from-slate-700 to-slate-900 flex justify-between items-center p-4"
     >
       <div class="justify-self-end inline-flex items-center text-slate-50">
         <span class="text-sm inline-flex">
