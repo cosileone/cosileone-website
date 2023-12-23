@@ -231,7 +231,7 @@
           </div>
           <div class="sm:flex flex-row-reverse gap-12">
             <h3
-              class="font-display text-6xl text-slate-300 font-bold shrink-0 text-right"
+              class="font-display text-6xl text-slate-300 font-bold shrink-0 sm:text-right"
             >
               2. Plan
             </h3>
@@ -265,7 +265,7 @@
           </div>
           <div class="sm:flex flex-row-reverse gap-12">
             <h3
-              class="font-display text-6xl text-slate-300 font-bold shrink-0 text-right"
+              class="font-display text-6xl text-slate-300 font-bold shrink-0 sm:text-right"
             >
               4. Deliver
             </h3>
