@@ -15,12 +15,12 @@
           Best-in-class web development for your business.
         </p>
         <div class="mt-20 md:mt-28 mb-4">
-          <a href="#tools" class="learn-more-button">
+          <a href="#process" class="learn-more-button">
             Learn more
           </a>
-          <button type="button" class="contact-button ml-6">
+          <a class="contact-button ml-6" href="https://cal.com/cosileone">
             Get a free quote
-          </button>
+          </a>
         </div>
       </div>
       <!--      <div class="relative flex justify-center">-->
@@ -209,7 +209,8 @@
     >
       <div class="p-6">
         <h2
-          class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10"
+          id="process"
+          class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10 scroll-mt-40"
         >
           The Process
         </h2>
@@ -287,7 +288,6 @@
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
           <h3
-            id="tools"
             class="text-slate-50 text-3xl font-display font-semibold tracking-tight"
           >
             The tools I use

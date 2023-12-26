@@ -1,11 +1,11 @@
 <template>
   <header
-    :class="[hasScrolled ? 'backdrop-blur-md bg-slate-300/60' : 'bg-slate-100']"
-    class="header group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
+    :class="[hasScrolled ? 'bg-slate-300/30' : 'bg-slate-100/10']"
+    class="header backdrop-blur-md group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <strong>
-        <NuxtLink to="/">portfolio.</NuxtLink>
+        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']">portfolio.</NuxtLink>
       </strong>
     </div>
     <nav class="nav hidden md:flex">
@@ -14,7 +14,7 @@
       <!--        to="/"-->
       <!--        >Home</g-link-->
       <!--      >-->
-      <!--      <g-link class="nav__link" to="/about/">About</g-link>-->
+<!--      <NuxtLink class="nav__link" :class="[hasScrolled ? 'text-gray-900' : 'text-gray-200']" to="/about">About</NuxtLink>-->
     </nav>
     <div>
       <button
@@ -24,11 +24,12 @@
       >
         Back to top
       </button>
-      <button
+      <a
+        href="https://cal.com/cosileone"
         class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
         Contact Me
-      </button>
+      </a>
       <button
         @click.stop="isMenuOpen = !isMenuOpen"
         class="sm:inline-flex md:hidden items-center px-2 py-2 border shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
@@ -101,14 +102,14 @@
 </template>
 
 <script setup lang="ts">
-import debounce from "lodash-es/debounce";
+import throttle from "lodash-es/throttle";
 import { onClickOutside } from '@vueuse/core';
 
 const clickOutsideRef = ref(null);
 const isMenuOpen = ref(false);
 const hasScrolled = ref(false);
 
-const onScrollHandler = debounce(function() {
+const onScrollHandler = throttle(function() {
   hasScrolled.value = window.scrollY > 0;
 }, 115);
 
@@ -135,6 +136,10 @@ onUnmounted(() => {
 .header {
   /*box-shadow: rgba(0, 0, 0, 0.07) 0px 24px 32px -8px, rgba(0, 0, 0, 0.03) 0px 4px 32px 0px*/
   width: 80%;
+}
+
+.nav__link {
+    @apply text-sm px-4 py-2 font-medium rounded hover:bg-gray-100 hover:text-gray-700 transition-colors ml-4;
 }
 
 .nav {
