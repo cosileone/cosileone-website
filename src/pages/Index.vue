@@ -7,11 +7,11 @@
       <div class="text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h1
-          class="md:pb-40 pb-52 pt-[200px] md:pt-80 text-8xl md:text-9xl text-slate-50 font-display font-bold tracking-tighter"
+          class="md:pb-40 pb-52 pt-[200px] md:pt-80 text-8xl md:text-9xl text-slate-50 font-display font-black italic tracking-tight"
         >
           Cosi Leone
         </h1>
-        <p class="text-lg text-slate-300 tracking-tight text-balance">
+        <p class="font-display italic text-lg text-slate-300 font-body tracking-tight text-balance">
           Best-in-class web development for your business.
         </p>
         <div class="mt-20 md:mt-28 mb-4">
@@ -45,7 +45,7 @@
             E-commerce
           </h3>
           <div class="col-span-2">
-            <p class="font-body text-balance text-slate-700 mt-4">
+            <p class="font-sans tracking-tight text-balance text-slate-700 mt-4">
               Having worked at Amazon I bring with me the collective experience
               of a global ecommerce giant. I can help you build your first
               online store or improve your existing one, and increase your sales
@@ -58,7 +58,7 @@
             Tech Startups
           </h3>
           <div class="col-span-2">
-            <p class="font-body text-balance text-slate-700 mt-4">
+            <p class="font-sans tracking-tight text-balance text-slate-700 mt-4">
               I have launched several startups and now have a battle-tested set
               of tools and strategies to help you get your idea off the ground.
               I can help you build your MVP, and scale it to as many users as
@@ -71,7 +71,7 @@
             Individuals
           </h3>
           <div class="col-span-2">
-            <p class="font-body text-balance text-slate-700 mt-4">
+            <p class="font-sans tracking-tight text-balance text-slate-700 mt-4">
               Big ideas in mind? I can help you get there and there is no
               obligation until we agree on a plan. I can help you build your
               online presence and get your personal brand out there in the best
@@ -210,7 +210,7 @@
       <div class="p-6">
         <h2
           id="process"
-          class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10 scroll-mt-40"
+          class="text-slate-700 text-5xl sm:text-6xl font-display font-black tracking-tight mb-10 scroll-mt-40"
         >
           The Process
         </h2>
@@ -581,11 +581,11 @@ export default {
 
 <style>
 .learn-more-button {
-  @apply inline-flex items-center px-4 py-2 border border-slate-200 shadow-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
+  @apply inline-flex items-center px-4 py-2 border border-slate-200 shadow-sm rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
 }
 
 .contact-button {
-  @apply inline-flex items-center px-4 py-2 border border-none font-medium rounded-md shadow-sm text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+  @apply inline-flex items-center px-4 py-2 border border-none rounded-md shadow-sm text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
 }
 
 .footer-icon {

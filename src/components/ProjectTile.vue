@@ -15,10 +15,10 @@
       </div>
       <div class="flex-1">
         <a :href="url" class="block">
-          <p class="text-xl font-semibold text-gray-900">
+          <p class="text-xl font-display font-semibold text-gray-900">
             {{ title }}
           </p>
-          <p>{{ subtitle }}</p>
+          <p class="text-sm">{{ subtitle }}</p>
           <p class="mt-3 text-base text-gray-500">
             {{ description }}
           </p>

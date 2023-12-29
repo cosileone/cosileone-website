@@ -5,7 +5,7 @@
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <strong>
-        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']">portfolio.</NuxtLink>
+        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold">portfolio.</NuxtLink>
       </strong>
     </div>
     <nav class="nav hidden md:flex">
@@ -32,7 +32,7 @@
       </a>
       <button
         @click.stop="isMenuOpen = !isMenuOpen"
-        class="sm:inline-flex md:hidden items-center px-2 py-2 border shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="sm:inline-flex md:hidden items-center px-2 py-2 border border-gray-400 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white/30 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
         <svg
           v-if="!isMenuOpen"
@@ -76,7 +76,7 @@
     >
       <div
         v-show="isMenuOpen"
-        ref="clickOutsideRef"
+        v-on-click-outside.bubble="onClickOutsideHandler"
         class="block md:hidden origin-top-right absolute top-16 right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
         role="menu"
         aria-orientation="vertical"
@@ -103,9 +103,8 @@
 
 <script setup lang="ts">
 import throttle from "lodash-es/throttle";
-import { onClickOutside } from '@vueuse/core';
+import { vOnClickOutside } from '@vueuse/components';
 
-const clickOutsideRef = ref(null);
 const isMenuOpen = ref(false);
 const hasScrolled = ref(false);
 
@@ -120,9 +119,7 @@ const scrollToTop = () => {
   });
 }
 
-onClickOutside(clickOutsideRef, () => {
-  isMenuOpen.value = false;
-});
+const onClickOutsideHandler = () => isMenuOpen.value = false;
 
 onMounted(() => {
   window.addEventListener("scroll", onScrollHandler);
