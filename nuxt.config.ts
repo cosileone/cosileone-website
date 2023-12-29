@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@vueuse/nuxt', ['@nuxtjs/google-fonts', {
     families: {
       Inter: [400, 500, 600],
