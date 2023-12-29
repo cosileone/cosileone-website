@@ -36,7 +36,7 @@
     >
       <div class="p-6 flex flex-col gap-12">
         <h2
-          class="text-slate-700 text-6xl font-display font-semibold tracking-tight mb-10"
+          class="text-slate-700 text-6xl font-display font-black tracking-tight mb-10"
         >
           How can I help you?
         </h2>
@@ -86,7 +86,7 @@
     >
       <div class="p-6">
         <h2
-          class="text-slate-50 text-6xl font-display font-semibold tracking-tight pb-6"
+          class="text-slate-50 text-6xl font-display font-black tracking-tight pb-6"
         >
           Recent Successes
         </h2>
