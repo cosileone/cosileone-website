@@ -214,7 +214,7 @@
           The Process
         </h2>
         <div class="flex flex-col gap-16 max-w-[1200px] mx-auto">
-          <div class="sm:flex">
+          <div class="sm:flex gap-12">
             <h3 class="font-display text-6xl text-slate-400 font-bold shrink-0">
               1. Intro<span class="hidden sm:inline">duce</span>
             </h3>
