@@ -2,7 +2,7 @@
   <Layout>
     <ContentTile
       id="top"
-      class="bg-gradient-to-tr from-black to-slate-800 shadow pb-12"
+      class="bg-gradient-to-tr from-slate-900 to-slate-700 shadow pb-12"
     >
       <div class="text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
