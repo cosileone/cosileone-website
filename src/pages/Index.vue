@@ -2,18 +2,18 @@
   <Layout>
     <ContentTile
       id="top"
-      class="bg-gradient-to-tr from-black to-slate-800 shadow pb-16"
+      class="bg-gradient-to-tr from-black to-slate-800 shadow pb-12"
     >
       <div class="text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h2
-          class="md:pb-40 pb-52 pt-[200px] md:pt-80 text-4xl md:text-9xl text-slate-50 font-display font-black italic tracking-tight text-balance"
+          class="md:pb-40 pb-52 pt-[200px] md:pt-64 text-4xl md:text-9xl text-slate-50 font-display font-black tracking-tighter text-balance"
           style="text-wrap: balance;"
         >
-          Best-in-class <br /> <span class="text-slate-400">web development</span> <br /> for your business.
+          Best-in-class <br /> <span class="text-slate-400">web development</span> <br /> for your business
         </h2>
 <!--        <p class="font-display italic text-lg text-slate-300 font-body tracking-tight text-balance"></p>-->
-        <div class="mt-20 md:mt-28 mb-4">
+        <div class="mt-20 md:mt-16 mb-4">
           <a href="#process" class="learn-more-button">
             Learn more
           </a>
@@ -213,9 +213,9 @@
         >
           The Process
         </h2>
-        <div class="flex flex-col gap-12 max-w-[1200px] mx-auto">
-          <div class="sm:flex gap-12">
-            <h3 class="font-display text-6xl text-slate-300 font-bold shrink-0">
+        <div class="flex flex-col gap-16 max-w-[1200px] mx-auto">
+          <div class="sm:flex">
+            <h3 class="font-display text-6xl text-slate-400 font-bold shrink-0">
               1. Intro<span class="hidden sm:inline">duce</span>
             </h3>
             <div>
@@ -231,7 +231,7 @@
           </div>
           <div class="sm:flex flex-row-reverse gap-12">
             <h3
-              class="font-display text-6xl text-slate-300 font-bold shrink-0 sm:text-right"
+              class="font-display text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
             >
               2. Plan
             </h3>
@@ -249,7 +249,7 @@
           </div>
           <div class="sm:flex gap-12">
             <h3
-              class="font-display text-6xl text-slate-300 font-bold shrink-0 whitespace-nowrap"
+              class="font-display text-6xl text-slate-400 font-bold shrink-0 whitespace-nowrap"
             >
               3. Develop
             </h3>
@@ -265,7 +265,7 @@
           </div>
           <div class="sm:flex flex-row-reverse gap-12">
             <h3
-              class="font-display text-6xl text-slate-300 font-bold shrink-0 sm:text-right"
+              class="font-display text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
             >
               4. Deliver
             </h3>

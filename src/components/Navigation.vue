@@ -5,7 +5,7 @@
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <h1>
-        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold">Cosi Leone.</NuxtLink>
+        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold">Cosi Leone</NuxtLink>
       </h1>
     </div>
     <nav class="nav hidden md:flex">
