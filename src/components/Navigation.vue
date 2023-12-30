@@ -1,14 +1,14 @@
 <template>
   <header
     :class="[hasScrolled ? 'bg-slate-300/30' : 'bg-slate-100/10']"
-    class="header backdrop-blur-md group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
+    class="header backdrop-blur-md group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0 z-10"
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <h1>
-        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold">Cosi Leone</NuxtLink>
+        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold transition-colors">Cosi Leone</NuxtLink>
       </h1>
     </div>
-    <nav class="nav hidden md:flex">
+    <nav class="hidden md:flex">
       <!--      <g-link-->
       <!--        class="text-sm px-4 py-2 font-medium rounded ml-5 hover:bg-gray-100 transition-all opacity-0 group-hover/header:opacity-100 group-hover/header:duration-300"-->
       <!--        to="/"-->
@@ -112,11 +112,13 @@ const onScrollHandler = throttle(function() {
   hasScrolled.value = window.scrollY > 0;
 }, 115);
 
+const router = useRouter();
 const scrollToTop = () => {
   window.scroll({
     top: 0,
     behavior: "smooth"
   });
+  router.replace({ hash: "" });
 }
 
 const onClickOutsideHandler = () => isMenuOpen.value = false;
@@ -137,9 +139,6 @@ onUnmounted(() => {
 
 .nav__link {
     @apply text-sm px-4 py-2 font-medium rounded hover:bg-gray-100 hover:text-gray-700 transition-colors ml-4;
-}
-
-.nav {
 }
 
 .hamburger-button {

@@ -1,23 +1,22 @@
 <template>
   <Layout>
     <ContentTile
-      id="top"
       class="bg-gradient-to-tr from-slate-900 to-slate-700 shadow pb-12"
     >
       <div class="text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
         <h2
-          class="md:pb-40 pb-52 pt-[200px] md:pt-64 text-4xl md:text-9xl text-slate-50 font-display font-black tracking-tighter text-balance"
+          class="md:pb-40 pb-52 pt-[200px] md:pt-64 text-4xl md:text-9xl text-slate-50 font-display font-black tracking-tighter text-balance drop-shadow z-1"
           style="text-wrap: balance;"
         >
           Best-in-class <br /> <span class="text-slate-400">web development</span> <br /> for your business
         </h2>
 <!--        <p class="font-display italic text-lg text-slate-300 font-body tracking-tight text-balance"></p>-->
         <div class="mt-20 md:mt-16 mb-4">
-          <a href="#process" class="learn-more-button">
+          <a href="#process" class="learn-more-button transition-colors">
             Learn more
           </a>
-          <a class="contact-button ml-6" href="https://cal.com/cosileone">
+          <a class="contact-button ml-6 transition-colors" href="https://cal.com/cosileone">
             Get a free quote
           </a>
         </div>
@@ -37,10 +36,10 @@
         <h2
           class="text-slate-700 text-6xl font-display font-black tracking-tight mb-10"
         >
-          How can I help you?
+          How can we help?
         </h2>
         <div class="grid md:grid-cols-3">
-          <h3 class="font-display text-4xl text-slate-600 font-semibold">
+          <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
             E-commerce
           </h3>
           <div class="col-span-2">
@@ -53,7 +52,7 @@
           </div>
         </div>
         <div class="grid md:grid-cols-3">
-          <h3 class="font-display text-4xl text-slate-600 font-semibold">
+          <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
             Tech Startups
           </h3>
           <div class="col-span-2">
@@ -66,7 +65,7 @@
           </div>
         </div>
         <div class="grid md:grid-cols-3">
-          <h3 class="font-display text-4xl text-slate-600 font-semibold">
+          <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
             Individuals
           </h3>
           <div class="col-span-2">
@@ -209,13 +208,13 @@
       <div class="p-6">
         <h2
           id="process"
-          class="text-slate-700 text-5xl sm:text-6xl font-display font-black tracking-tight mb-10 scroll-mt-40"
+          class="text-slate-700 text-5xl sm:text-6xl font-display font-black tracking-tight mb-16 scroll-mt-40"
         >
           The Process
         </h2>
         <div class="flex flex-col gap-16 max-w-[1200px] mx-auto">
           <div class="sm:flex gap-12">
-            <h3 class="font-display text-6xl text-slate-400 font-bold shrink-0">
+            <h3 class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0">
               1. Intro<span class="hidden sm:inline">duce</span>
             </h3>
             <div>
@@ -231,7 +230,7 @@
           </div>
           <div class="sm:flex flex-row-reverse gap-12">
             <h3
-              class="font-display text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
+              class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
             >
               2. Plan
             </h3>
@@ -249,7 +248,7 @@
           </div>
           <div class="sm:flex gap-12">
             <h3
-              class="font-display text-6xl text-slate-400 font-bold shrink-0 whitespace-nowrap"
+              class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0 whitespace-nowrap"
             >
               3. Develop
             </h3>
@@ -265,7 +264,7 @@
           </div>
           <div class="sm:flex flex-row-reverse gap-12">
             <h3
-              class="font-display text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
+              class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
             >
               4. Deliver
             </h3>
@@ -283,7 +282,7 @@
         </div>
       </div>
     </ContentTile>
-    <ContentTile class="bg-gradient-to-tl from-black to-gray-800 shadow p-4">
+    <ContentTile class="bg-gradient-to-tl from-slate-800 to-slate-600 shadow p-4">
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="py-6 px-1 md:px-6">
           <h3
@@ -580,11 +579,11 @@ export default {
 
 <style>
 .learn-more-button {
-  @apply inline-flex items-center px-4 py-2 border border-slate-200 shadow-sm rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
+  @apply inline-flex items-center px-4 py-2 border border-slate-700 shadow-sm rounded-md text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
 }
 
 .contact-button {
-  @apply inline-flex items-center px-4 py-2 border border-none rounded-md shadow-sm text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+  @apply inline-flex items-center px-4 py-2 border border-slate-400 shadow-sm rounded-md text-gray-700 bg-slate-50 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
 }
 
 .footer-icon {

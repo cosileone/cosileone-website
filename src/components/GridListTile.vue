@@ -1,6 +1,6 @@
 <template>
   <li
-    class="col-span-1 shadow-sm rounded-md border border-gray-700 bg-slate-800"
+    class="col-span-1 shadow-sm rounded-md border border-gray-700 bg-slate-600"
   >
     <component :is="$attrs.href ? 'a' : 'span'" v-bind="$attrs" class="flex">
       <slot>
@@ -14,7 +14,7 @@
       <div class="flex-1 flex items-center justify-between truncate">
         <div class="flex-1 px-4 py-2 text-sm truncate">
           <p
-            class="text-slate-50 font-medium hover:text-slate-400 truncate"
+            class="text-slate-50 font-medium hover:text-slate-300 truncate"
             :title="title"
           >
             {{ title }}
