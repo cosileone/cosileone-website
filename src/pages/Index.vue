@@ -45,7 +45,7 @@
             E-commerce
           </h3>
           <div class="col-span-2">
-            <p class="font-sans tracking-tight text-balance text-slate-700 mt-4">
+            <p class="font-sans text-balance text-slate-700 mt-4">
               Having worked at Amazon I bring with me the collective experience
               of a global ecommerce giant. I can help you build your first
               online store or improve your existing one, and increase your sales
@@ -58,7 +58,7 @@
             Tech Startups
           </h3>
           <div class="col-span-2">
-            <p class="font-sans tracking-tight text-balance text-slate-700 mt-4">
+            <p class="font-sans text-balance text-slate-700 mt-4">
               I have launched several startups and now have a battle-tested set
               of tools and strategies to help you get your idea off the ground.
               I can help you build your MVP, and scale it to as many users as
@@ -71,7 +71,7 @@
             Individuals
           </h3>
           <div class="col-span-2">
-            <p class="font-sans tracking-tight text-balance text-slate-700 mt-4">
+            <p class="font-sans text-balance text-slate-700 mt-4">
               Big ideas in mind? I can help you get there and there is no
               obligation until we agree on a plan. I can help you build your
               online presence and get your personal brand out there in the best
