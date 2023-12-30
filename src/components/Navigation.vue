@@ -4,9 +4,9 @@
     class="header backdrop-blur-md group/header flex items-center justify-between transition-all duration-300 font-body container mx-auto px-5 shadow-xl rounded-lg md:max-w-7xl fixed top-10 md:top-12 left-0 right-0"
   >
     <div class="h-16 w-48 flex items-center text-xl">
-      <strong>
-        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold">portfolio.</NuxtLink>
-      </strong>
+      <h1>
+        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold">Cosi Leone.</NuxtLink>
+      </h1>
     </div>
     <nav class="nav hidden md:flex">
       <!--      <g-link-->
@@ -32,7 +32,7 @@
       </a>
       <button
         @click.stop="isMenuOpen = !isMenuOpen"
-        class="sm:inline-flex md:hidden items-center px-2 py-2 border border-gray-400 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white/30 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="sm:inline-flex md:hidden items-center px-2 py-2 border border-gray-500 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-900 bg-white/20 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-700 focus:ring-gray-500"
       >
         <svg
           v-if="!isMenuOpen"

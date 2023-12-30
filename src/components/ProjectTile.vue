@@ -19,7 +19,7 @@
             {{ title }}
           </p>
           <p class="text-sm">{{ subtitle }}</p>
-          <p class="mt-3 text-base text-gray-500">
+          <p class="mt-3 text-base text-gray-500 text-balance" style="text-wrap: balance;">
             {{ description }}
           </p>
         </a>

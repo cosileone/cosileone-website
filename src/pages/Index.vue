@@ -6,13 +6,14 @@
     >
       <div class="text-center">
         <!--        <p class="mb-7 text-lg text-gray-500">Hi, my name is</p>-->
-        <h1
-          class="md:pb-40 pb-52 pt-[200px] md:pt-80 text-8xl md:text-9xl text-slate-50 font-display font-black italic tracking-tight"
+        <h2
+          class="md:pb-40 pb-52 pt-[200px] md:pt-80 text-4xl md:text-9xl text-slate-50 font-display font-black italic tracking-tight text-balance"
+          style="text-wrap: balance;"
         >
-          Cosi Leone
-        </h1>
-        <p class="font-display italic text-lg text-slate-300 font-body tracking-tight text-balance">
           Best-in-class web development for your business.
+        </h2>
+        <p class="font-display italic text-lg text-slate-300 font-body tracking-tight text-balance">
+
         </p>
         <div class="mt-20 md:mt-28 mb-4">
           <a href="#process" class="learn-more-button">
@@ -45,7 +46,7 @@
             E-commerce
           </h3>
           <div class="col-span-2">
-            <p class="font-sans text-balance text-slate-700 mt-4">
+            <p class="font-sans text-balance text-slate-700 mt-4" style="text-wrap: balance;">
               Having worked at Amazon I bring with me the collective experience
               of a global ecommerce giant. I can help you build your first
               online store or improve your existing one, and increase your sales
@@ -58,7 +59,7 @@
             Tech Startups
           </h3>
           <div class="col-span-2">
-            <p class="font-sans text-balance text-slate-700 mt-4">
+            <p class="font-sans text-balance text-slate-700 mt-4" style="text-wrap: balance;">
               I have launched several startups and now have a battle-tested set
               of tools and strategies to help you get your idea off the ground.
               I can help you build your MVP, and scale it to as many users as
@@ -71,7 +72,7 @@
             Individuals
           </h3>
           <div class="col-span-2">
-            <p class="font-sans text-balance text-slate-700 mt-4">
+            <p class="font-sans text-balance text-slate-700 mt-4" style="text-wrap: balance;">
               Big ideas in mind? I can help you get there and there is no
               obligation until we agree on a plan. I can help you build your
               online presence and get your personal brand out there in the best
