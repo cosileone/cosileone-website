@@ -215,7 +215,7 @@
         <div class="flex flex-col gap-16 max-w-[1200px] mx-auto">
           <div class="sm:flex gap-12">
             <h3 class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0">
-              1. Intro<span class="hidden sm:inline">duce</span>
+              <span class="text-slate-300">1.</span> Intro<span class="hidden sm:inline">duce</span>
             </h3>
             <div>
               <p class="font-body text-balance text-slate-500 mt-4">
@@ -232,7 +232,7 @@
             <h3
               class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
             >
-              2. Plan
+              <span class="text-slate-300">2.</span> Plan
             </h3>
             <div>
               <p class="font-body text-balance text-slate-500 mt-4">
@@ -250,7 +250,7 @@
             <h3
               class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0 whitespace-nowrap"
             >
-              3. Develop
+              <span class="text-slate-300">3.</span> Develop
             </h3>
             <div>
               <p class="font-body text-balance text-slate-500 mt-4">
@@ -266,7 +266,7 @@
             <h3
               class="font-display tracking-tight text-6xl text-slate-400 font-bold shrink-0 sm:text-right"
             >
-              4. Deliver
+              <span class="text-slate-300">4.</span> Deliver
             </h3>
             <div>
               <p class="font-body text-balance text-slate-500 mt-4">
