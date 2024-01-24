@@ -36,7 +36,7 @@
         <h2
           class="text-slate-700 text-6xl font-display font-black tracking-tight mb-10"
         >
-          How can we help?
+          How can I help?
         </h2>
         <div class="grid md:grid-cols-3">
           <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
