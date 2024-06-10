@@ -169,6 +169,32 @@
             </template>
           </ProjectTile>
           <ProjectTile
+            title="PHILIPP DORNER"
+            subtitle="www.philippdorner.com"
+            description="Philipp Dorner is a German-born menswear designer based in London with his eponymous, high-end brand of modern clothing with innovative materials. This project was built with Shopify with a highly customised theme allowing the clothing brand to ship and sell their garments from multiple locations throughout Europe to a global audience."
+            url="https://www.philippdorner.com"
+          >
+            <template #preview-image>
+              <img
+                class="object-cover object-top md:w-full"
+                src="/img/ppd.webp"
+                alt="Preview picture of the the Philipp Dorner brand, "
+              />
+            </template>
+            <template #badges>
+              <span
+                class="mr-2 bg-green-50 text-green-700 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Shopify
+              </span>
+              <span
+                class="mr-2 bg-blue-100 text-blue-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                E-commerce
+              </span>
+            </template>
+          </ProjectTile>
+          <ProjectTile
             title="Bills of Knowledge"
             subtitle="www.billsofknowledge.com"
             description="Bills of Knowledge is a banking app aimed at the Italian Generation Z (18-27 year olds) to help them manage their money by gamifiying their saving, and learn about personal finance through short TikTok videos."

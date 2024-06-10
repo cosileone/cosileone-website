@@ -4,7 +4,7 @@
       <div class="flex-shrink-0 lg:min-h-[400px]">
         <slot name="preview-image">Image</slot>
       </div>
-      <div class="absolute bottom-0 inset-x-0 flex-1 bg-white/70 backdrop-blur-lg p-6 flex flex-col justify-between">
+      <div class="absolute bottom-0 inset-x-0 flex-1 bg-white/60 backdrop-blur-md p-6 flex flex-col justify-between">
         <div class="mb-3">
           <slot name="badges">
             <span
