@@ -39,11 +39,11 @@
           How can I help?
         </h2>
         <div class="grid md:grid-cols-3">
-          <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
+          <h3 class="lg:text-right lg:pr-12 font-display tracking-tight text-4xl text-slate-600 font-semibold">
             E-commerce
           </h3>
-          <div class="col-span-2">
-            <p class="font-body text-balance text-slate-700 mt-4" style="text-wrap: balance;">
+          <div class="col-span-2 lg:border-l-2 border-slate-300 pl-6 lg:pl-12">
+            <p class="font-body text-balance text-sm text-slate-700 mt-4" style="text-wrap: balance;">
               Having worked at Amazon I bring with me the collective experience
               of a global ecommerce giant. I can help you build your first
               online store or improve your existing one, and increase your sales
@@ -52,11 +52,11 @@
           </div>
         </div>
         <div class="grid md:grid-cols-3">
-          <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
+          <h3 class="lg:text-right lg:pr-12 font-display tracking-tight text-4xl text-slate-600 font-semibold">
             Tech Startups
           </h3>
-          <div class="col-span-2">
-            <p class="font-body text-balance text-slate-700 mt-4" style="text-wrap: balance;">
+          <div class="col-span-2 lg:border-l-2 border-slate-300 pl-6 lg:pl-12">
+            <p class="font-body text-balance text-sm text-slate-700 mt-4" style="text-wrap: balance;">
               I have launched several startups and now have a battle-tested set
               of tools and strategies to help you get your idea off the ground.
               I can help you build your MVP, and scale it to as many users as
@@ -65,11 +65,11 @@
           </div>
         </div>
         <div class="grid md:grid-cols-3">
-          <h3 class="font-display tracking-tight text-4xl text-slate-600 font-semibold">
+          <h3 class="lg:text-right lg:pr-12 font-display tracking-tight text-4xl text-slate-600 font-semibold">
             Individuals
           </h3>
-          <div class="col-span-2">
-            <p class="font-body text-balance text-slate-700 mt-4" style="text-wrap: balance;">
+          <div class="col-span-2 lg:border-l-2 border-slate-300 pl-6 lg:pl-12">
+            <p class="font-body text-balance text-sm text-slate-700 mt-4" style="text-wrap: balance;">
               Big ideas in mind? I can help you get there and there is no
               obligation until we agree on a plan. I can help you build your
               online presence and get your personal brand out there in the best
@@ -86,11 +86,88 @@
         <h2
           class="text-slate-50 text-6xl font-display font-black tracking-tight pb-6"
         >
-          Recent Successes
+          Featured Successes
         </h2>
         <div
-          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none"
+          class="mt-12 max-w-lg mx-auto grid gap-5 md:max-w-full md:min-h-[900px] lg:grid-cols-1 lg:max-w-[1200px]"
         >
+          <ProjectTile
+            title="Kaze"
+            subtitle="www.kaze.media"
+            description="Kaze is a music distribution network and social media platform for musicians primed to disrupt the status quo of music distribution. It allows artists to upload their music, share it with their fans, and get paid for their work. The platform is built with Python Django on the backend and React on the frontend."
+            url="https://www.kaze.media"
+          >
+            <template #preview-image>
+              <img
+                class="object-cover object-top md:w-full"
+                src="/img/kaze2.webp"
+                alt="Preview picture of the Kaze.media website, a music distribution network and social media platform for musicians."
+              />
+            </template>
+            <template #badges>
+              <span
+                class="mr-2 bg-green-900 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Django
+              </span>
+              <span
+                class="mr-2 bg-blue-900 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Python
+              </span>
+              <span
+                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                React
+              </span>
+              <span
+                class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                AWS
+              </span>
+              <span
+                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                PostgreSQL
+              </span>
+            </template>
+          </ProjectTile>
+          <ProjectTile
+            title="Auction Goblin"
+            subtitle="www.auctiongoblin.com"
+            description="Auction Goblin is the Bloomberg terminal for World of Warcraft Classic, and helps players dominate the economic side of the game. This project was built with the esteemed T3 stack, and has over 7000 users signed up."
+            url="https://www.auctiongoblin.com"
+          >
+            <template #preview-image>
+              <img
+                class="object-cover object-top md:w-full"
+                src="/img/auction-goblin2.webp"
+                alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
+              />
+            </template>
+            <template #badges>
+              <span
+                class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Next.js
+              </span>
+              <span
+                class="mr-2 bg-blue-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                Blizzard API
+              </span>
+              <span
+                class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                AWS
+              </span>
+              <span
+                class="mr-2 bg-blue-600 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+              >
+                TypeScript
+              </span>
+            </template>
+          </ProjectTile>
           <ProjectTile
             title="Bills of Knowledge"
             subtitle="www.billsofknowledge.com"
@@ -99,7 +176,7 @@
           >
             <template #preview-image>
               <img
-                class="h-48 object-cover object-top md:w-full"
+                class="object-cover object-top md:w-full"
                 src="/img/bok.webp"
                 alt="Preview picture of the website of 'Bills of Knowledge'"
               />
@@ -121,45 +198,9 @@
                 Vercel
               </span>
               <span
-                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+                class="mr-2 bg-blue-600 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
               >
-                TypeScript (full stack)
-              </span>
-            </template>
-          </ProjectTile>
-          <ProjectTile
-            title="Auction Goblin"
-            subtitle="www.auctiongoblin.com"
-            description="Auction Goblin is the Bloomberg terminal for World of Warcraft Classic, and helps players dominate the economic side of the game. This project was built with the esteemed T3 stack, and has over 2000 users signed up."
-            url="https://www.auctiongoblin.com"
-          >
-            <template #preview-image>
-              <img
-                class="h-48 object-cover object-top md:w-full"
-                src="/img/auction-goblin2.webp"
-                alt="Preview picture of the World of Warcraft auction house project named 'Auction Goblin'"
-              />
-            </template>
-            <template #badges>
-              <span
-                class="mr-2 bg-gray-800 text-white inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Next.js
-              </span>
-              <span
-                class="mr-2 bg-blue-100 text-blue-800 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                Blizzard API
-              </span>
-              <span
-                class="mr-2 bg-yellow-300 text-yellow-900 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                AWS
-              </span>
-              <span
-                class="mr-2 bg-indigo-100 text-indigo-600 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
-              >
-                TypeScript (full stack)
+                TypeScript
               </span>
             </template>
           </ProjectTile>
@@ -583,7 +624,7 @@ export default {
 }
 
 .contact-button {
-  @apply inline-flex items-center px-4 py-2 border border-slate-400 shadow-sm rounded-md text-gray-700 bg-slate-50 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
+  @apply inline-flex items-center px-4 py-2 border border-slate-100 shadow-sm rounded-md text-gray-700 bg-slate-50 hover:bg-slate-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500;
 }
 
 .footer-icon {

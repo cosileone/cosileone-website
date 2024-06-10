@@ -19,14 +19,14 @@
     <div>
       <button
         :class="[hasScrolled ? 'opacity-100' : 'opacity-0 cursor-default']"
-        class="hidden md:inline-flex transition-opacity items-center px-3 py-2 border shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="hidden md:inline-flex transition-[color,background-color,border-color,text-decoration-color,fill,stroke,opacity] items-center px-3 py-2 border border-slate-100 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         @click="scrollToTop"
       >
         Back to top
       </button>
       <a
         href="https://cal.com/cosileone"
-        class="hidden md:inline-flex inline-flex ml-4 items-center px-3 py-2 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="hidden md:inline-flex transition-colors ml-4 items-center px-3 py-2 text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-gray-900 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
       >
         Contact Me
       </a>
