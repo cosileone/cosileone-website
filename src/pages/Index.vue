@@ -94,7 +94,7 @@
           <ProjectTile
             title="Kaze"
             subtitle="www.kaze.media"
-            description="Kaze is a music distribution network and social media platform for musicians primed to disrupt the status quo of music distribution. It allows artists to upload their music, share it with their fans, and get paid for their work. The platform is built with Python Django on the backend and React on the frontend."
+            description="Kaze is a music distribution network and social media platform for musicians primed to disrupt the status quo of the music industry. It allows artists to upload their music, share it with their fans, and even set up a paywall or subscription for early access content."
             url="https://www.kaze.media"
           >
             <template #preview-image>
