@@ -5,7 +5,9 @@
   >
     <div class="h-16 w-48 flex items-center text-xl">
       <h1>
-        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']" class="font-display font-semibold transition-colors">Cosi Leone</NuxtLink>
+        <NuxtLink to="/" :class="[hasScrolled ? 'text-black' : 'text-gray-200']"
+                  class="font-display font-semibold transition-colors">Cosi Leone
+        </NuxtLink>
       </h1>
     </div>
     <nav class="hidden md:flex">
@@ -14,7 +16,7 @@
       <!--        to="/"-->
       <!--        >Home</g-link-->
       <!--      >-->
-<!--      <NuxtLink class="nav__link" :class="[hasScrolled ? 'text-gray-900' : 'text-gray-200']" to="/about">About</NuxtLink>-->
+      <!--      <NuxtLink class="nav__link" :class="[hasScrolled ? 'text-gray-900' : 'text-gray-200']" to="/about">About</NuxtLink>-->
     </nav>
     <div>
       <button
@@ -83,12 +85,18 @@
         aria-labelledby="options-menu"
       >
         <div class="py-1 text-center" role="none">
-          <NuxtLink
-            to="/"
-            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-            role="menuitem"
-            >Home
-          </NuxtLink>
+          <!--          <NuxtLink-->
+          <!--            to="/"-->
+          <!--            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"-->
+          <!--            role="menuitem"-->
+          <!--            >Home-->
+          <!--          </NuxtLink>-->
+          <a href="https://cal.com/cosileone"
+             class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+             role="menuitem"
+          >
+            Contact Me
+          </a>
           <!--          <g-link-->
           <!--            to="/about/"-->
           <!--            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"-->
@@ -102,13 +110,14 @@
 </template>
 
 <script setup lang="ts">
-import throttle from "lodash-es/throttle";
+import throttle from 'lodash-es/throttle';
 import { vOnClickOutside } from '@vueuse/components';
+
 
 const isMenuOpen = ref(false);
 const hasScrolled = ref(false);
 
-const onScrollHandler = throttle(function() {
+const onScrollHandler = throttle(function () {
   hasScrolled.value = window.scrollY > 0;
 }, 115);
 
@@ -116,25 +125,25 @@ const router = useRouter();
 const scrollToTop = () => {
   window.scroll({
     top: 0,
-    behavior: "smooth"
+    behavior: 'smooth'
   });
-  router.replace({ hash: "" });
+  router.replace({ hash: '' });
 }
 
 const onClickOutsideHandler = () => isMenuOpen.value = false;
 
 onMounted(() => {
-  window.addEventListener("scroll", onScrollHandler);
+  window.addEventListener('scroll', onScrollHandler);
 });
 onUnmounted(() => {
-  window.removeEventListener("scroll", onScrollHandler);
+  window.removeEventListener('scroll', onScrollHandler);
 });
 </script>
 
 <style scoped>
 .header {
-  /*box-shadow: rgba(0, 0, 0, 0.07) 0px 24px 32px -8px, rgba(0, 0, 0, 0.03) 0px 4px 32px 0px*/
-  width: 80%;
+    /*box-shadow: rgba(0, 0, 0, 0.07) 0px 24px 32px -8px, rgba(0, 0, 0, 0.03) 0px 4px 32px 0px*/
+    width: 80%;
 }
 
 .nav__link {
